@@ -1,0 +1,62 @@
+.regionsDesktopTriggerContainer {
+  position: relative;
+
+  height: 2.625rem;
+  width: fit-content;
+
+  margin: auto 0;
+  padding: 0 0.175rem 0 0.375rem;
+}
+
+.regionsDesktopTriggerButton {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  border: none;
+  border-radius: 0.25rem;
+  gap: 0.375rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+
+  background-color: transparent;
+}
+
+.regionsDesktopTriggerButton:hover {
+  background-color: #dbe9fd;
+
+  cursor: pointer;
+}
+
+.regionsDesktopTriggerIcon {
+  height: 1.125rem;
+  width: 1rem;
+}
+
+.regionsDesktopTriggerLabel {
+  margin: 0;
+
+  font-size: 0.75rem;
+  font-family: 'Raleway';
+  line-height: 0.75rem;
+
+  color: #48494c;
+}
+
+.regionsDesktopTriggerAside {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  border-radius: 0.5rem;
+
+  background-color: #fff;
+
+  box-shadow: 0px 3px 12px #0000001a;
+  transform: translateY(108%);
+}

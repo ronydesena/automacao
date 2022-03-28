@@ -1,0 +1,24 @@
+.heading--product-specifications-title {
+  margin: 0 1rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: #48494c;
+}
+
+@media (min-width: 640px) {
+  .heading--product-specifications-title {
+    margin: 0 0.5rem !important;
+  }
+}
+
+@media (min-width: 1026px) {
+  .container--product-specifications-title {
+    max-width: 75rem;
+  }
+
+  .heading--product-specifications-title {
+    color: #ff3333;
+  }
+}

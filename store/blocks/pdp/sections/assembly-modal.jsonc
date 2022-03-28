@@ -1,0 +1,53 @@
+{
+  "flex-layout.row#assembly-modal-trigger": {
+    "props": {
+      "blockClass": "assembly-modal-trigger"
+    },
+    "children": [
+      "modal-trigger#assembly-options",
+      "modal-trigger#assembly-info"
+    ]
+  },
+
+  "modal-trigger#assembly-options": {
+    "children": ["rich-text#assembly-options", "modal-layout#assembly-options"],
+    "props": {
+      "blockClass": "modal-assembly-options"
+    }
+  },
+
+  "modal-layout#assembly-options": {
+    "children": ["assembly-options-modal"],
+    "props": {
+      "blockClass": "modal-assembly-options"
+    }
+  },
+
+  "rich-text#assembly-options": {
+    "props": {
+      "blockClass": "assemblyOptionsTriggerText",
+      "text": "Comprar por assinatura"
+    }
+  },
+
+  "modal-trigger#assembly-info": {
+    "children": ["rich-text#assembly-info", "modal-layout#assembly-info"],
+    "props": {
+      "blockClass": "modal-assembly-info"
+    }
+  },
+
+  "rich-text#assembly-info": {
+    "props": {
+      "blockClass": "assemblyInfoTriggerText",
+      "text": "O que é assinatura ?"
+    }
+  },
+
+  "modal-layout#assembly-info": {
+    "children": ["assembly-info-modal"],
+    "props": {
+      "blockClass": "modal-assembly-info"
+    }
+  }
+}

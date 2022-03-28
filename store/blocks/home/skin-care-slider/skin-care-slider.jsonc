@@ -1,0 +1,49 @@
+{
+  "list-context.image-list#skin-care": {
+    "children": ["slider-layout#skin-care"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "mobile"
+        }
+      ]
+    }
+  },
+  "slider-layout#skin-care": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "skin-care",
+      "showPaginationDots": "never",
+      "navigationStep": 1,
+      "infinite": false,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 10
+    }
+  },
+  "rich-text#skin-care": {
+    "props": {
+      "blockClass": "slider-title",
+      "text": "Cuidados com a pele"
+    }
+  },
+  "flex-layout.col#skin-care": {
+    "children": ["rich-text#skin-care", "list-context.image-list#skin-care"],
+    "props": {
+      "blockClass": "skin-care"
+    }
+  },
+  "flex-layout.row#skin-care": {
+    "children": ["flex-layout.col#skin-care"]
+  }
+}

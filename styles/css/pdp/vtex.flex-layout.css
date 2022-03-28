@@ -1,0 +1,151 @@
+.flexCol--productSpecificationName,
+.flexCol--productSpecificationValue {
+  padding: 0.625rem 0 !important;
+}
+
+.flexColChild--productSpecificationName
+  :global(.vtex-product-specifications-1-x-specificationName) {
+  font-size: 0.875rem;
+
+  color: #48494c;
+}
+
+.flexColChild--productSpecificationValue
+  :global(.vtex-product-specifications-1-x-specificationValue) {
+  font-size: 0.875rem;
+
+  color: #48494c;
+}
+
+.flexRowContent--product-images-container {
+  position: relative;
+}
+
+.flexRowContent--product-images-container
+  .flexRowContent--highlights-container {
+  align-items: flex-end;
+}
+
+.flexRow--product-description :global(.vtex-store-components-3-x-container) {
+  padding: 0 1.5rem;
+}
+
+.flexRow--productSpecification {
+  margin: 0 1rem;
+}
+
+.flexRow--productSpecification:nth-child(even) {
+  background-color: transparent !important;
+}
+
+.flexRow--productSpecificationGroupName {
+  display: none;
+}
+
+.flexRow--message-availability {
+  margin: 0 1rem;
+}
+
+.flexRow--message-availability :global(.vtex-store-components-3-x-title) {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: center;
+
+  color: #48494c;
+}
+
+.flexRow--message-availability
+  :global(.vtex-store-components-3-x-subscribeLabel) {
+  text-align: center;
+}
+
+.flexRow--message-availability :global(.vtex-button) {
+  height: 2.5rem;
+  width: 100%;
+
+  border: none;
+  border-radius: 4px;
+
+  text-transform: capitalize;
+
+  background-color: #ff3333;
+  color: #fff;
+}
+
+.flexRowContent--productSpecification {
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.flexRowContent--product-main-container {
+  position: relative;
+
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.flexRowContent--product-main-container-availability {
+  position: relative;
+
+  margin-bottom: 0;
+}
+
+@media (min-width: 385px) {
+  .flexRowContent--selling-list-price {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .flexRowContent--product-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--product-main-container-availability {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1026px) {
+  .flexRowContent--product-main-container {
+    flex-direction: row;
+
+    max-width: 75rem;
+
+    margin: 0 auto;
+  }
+
+  .flexRowContent--selling-list-price {
+    gap: 1.5rem;
+  }
+
+  .flexRow--product-description :global(.vtex-store-components-3-x-container) {
+    max-width: 75rem;
+
+    padding: 0 0.5rem;
+  }
+
+  .flexRow--productSpecification {
+    margin: 0 0.5rem;
+  }
+
+  .flexRowContent--productSpecification {
+    border-bottom: none;
+  }
+
+  .flexCol--info-availability {
+    justify-content: center;
+  }
+
+  .flexRowContent--product-main-container-availability {
+    flex-direction: row;
+
+    max-width: 75rem;
+
+    margin: 0 auto;
+  }
+}

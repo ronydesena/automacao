@@ -1,0 +1,399 @@
+[class*='flexRowContent--drawer-header'] div {
+  width: 100% !important;
+}
+
+[class*='departmentsContainer'] h3 {
+  display: none;
+}
+
+[class*='vtex-pageHeader__title'] {
+  font-size: 1.5rem;
+}
+
+[class*='vtex-pageHeader__title'] > span {
+  font-weight: 700;
+}
+
+[class*='vtex-pageHeader__container']
+  [class*='vtex-pageHeader-link__container']:not(:first-child) {
+  display: none;
+}
+
+[class*='vtex-pageHeader-link__container'] button span {
+  font-size: 0;
+}
+
+[class*='vtex-pageHeader-link__container'] button span::before {
+  content: 'Voltar';
+  font-size: 0.875rem;
+}
+
+[class*='vtex-pageHeader__container'] > div {
+  margin-top: 0;
+}
+
+[class*='flexColChild--payment-methods']
+  [class*='vtex-flex-layout-0-x-flexRow']
+  > div {
+  display: flex;
+}
+
+[class*='flexRowContent--mega-menu-container']
+  [class*='vtex-mega-menu-2-x-submenuContainer']
+  [class*='vtex-mega-menu-2-x-submenuItem']:nth-child(1),
+[class*='flexRowContent--mega-menu-container']
+  [class*='vtex-mega-menu-2-x-submenuContainer']
+  [class*='vtex-mega-menu-2-x-submenuItem']:nth-child(2),
+[class*='flexRowContent--mega-menu-container']
+  [class*='vtex-mega-menu-2-x-submenuContainer']
+  [class*='vtex-mega-menu-2-x-submenuItem']:nth-child(3),
+[class*='flexRowContent--mega-menu-container']
+  [class*='vtex-mega-menu-2-x-submenuContainer']
+  [class*='vtex-mega-menu-2-x-submenuItem']:nth-child(4),
+[class*='flexRowContent--mega-menu-container']
+  [class*='vtex-mega-menu-2-x-submenuContainer']
+  [class*='vtex-mega-menu-2-x-submenuItem']:nth-child(5) {
+  display: block;
+}
+
+[class*='vtex-mega-menu-2-x-menuContainer'] h3 {
+  font-size: 0;
+
+  color: #ff3333;
+}
+
+[class*='vtex-mega-menu-2-x-menuContainer'] h3::before {
+  content: 'Departamentos';
+
+  font-size: 0.875rem;
+}
+
+[class*='vtex-mega-menu-2-x-menuItem bg-black-05']
+  [class*='vtex-mega-menu-2-x-styledLinkText'] {
+  font-weight: bold;
+
+  color: #ff3333 !important;
+}
+
+[class*='vtex-mega-menu-2-x-submenuContainer'] h3 {
+  display: flex;
+
+  align-items: center;
+
+  height: 2.5rem;
+  width: 100%;
+
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 0;
+  padding: 0 0 0 1.5rem;
+
+  font-size: 0.875rem;
+
+  color: #ff3333;
+}
+
+[class*='vtex-mega-menu-2-x-submenuContainer'] h3::before {
+  content: '';
+}
+
+[class*='submenuContainerVertical'] h3 {
+  position: absolute;
+
+  left: 0;
+  top: -3rem;
+
+  height: 3rem;
+  width: 100%;
+
+  padding-left: 2.25rem !important;
+  padding: 0;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 3rem;
+
+  background-color: #e5e9f2;
+  color: #48494c;
+
+  z-index: -1;
+}
+
+[class*='freigthScaleContainer'] span {
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+}
+
+[class*='currencyContainer'] span {
+  font-size: 0.875rem !important;
+}
+
+[class*='vtex-login-2-x-container'] span div {
+  margin: 0;
+}
+
+[class*='flexRow--newsletterContainer'] > section {
+  max-width: none;
+
+  padding: 0;
+}
+
+[class*='flexRow--content-service-client']
+  > [class*='vtex-store-components-3-x-container'] {
+  max-width: none;
+}
+
+[class*='summarySmallContent--summary-totalizers']
+  > [class*='summaryItemContainer'] {
+  display: none;
+}
+
+[class*='summarySmallContent--summary-totalizers']
+  > [class*='summaryItemContainer']:first-child,
+[class*='summarySmallContent--summary-totalizers']
+  > [class*='summaryItemContainer']:last-child {
+  display: flex;
+}
+
+[class*='summarySmallContent--summary-totalizers']
+  > [class*='summaryItemContainer']:last-child {
+  margin-top: 0.125rem;
+  padding: 0;
+}
+
+[class*='promofarma-store-theme-0-x-titleSectionLinkBadges'] ~ div {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+[class*='flexRow--social-icons']
+  > section[class*='vtex-store-components-3-x-container'] {
+  max-width: calc(75rem + 2rem);
+  margin: 0 auto;
+}
+
+[class*='flexRow--contactContent']
+  > section[class*='vtex-store-components-3-x-container'] {
+  padding: 0 0.25rem;
+}
+
+[class*='totalProducts--layout'] > span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5ch;
+
+  font-size: 0.75rem;
+}
+
+[class*='vtex-checkbox__box-wrapper'] > div[class*='c-on-disabled'] {
+  background-color: #ff3333;
+  color: #fff;
+
+  opacity: 0.7;
+}
+
+[class*='vtex-checkbox__container'] > div[class*='b--muted-4'] {
+  border-color: #48494c;
+}
+
+[class*='vtex-search-result-3-x-sidebar']
+  > div[class*='overflow-scroll']
+  [class*='filterBreadcrumbsText'] {
+  margin-left: 0;
+}
+
+[class*='vtex-search-result-3-x-sidebar']
+  > div[class*='overflow-scroll']
+  [class*='filterBreadcrumbsText']::after {
+  display: none;
+}
+
+[class*='flexRowContent--product-images-container']
+  > div[class*='stretchChildrenWidth']:first-child {
+  width: 100% !important;
+}
+
+[class*='flexRowContent--product-images-container']
+  > div[class*='stretchChildrenWidth']:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content !important;
+  z-index: 1;
+}
+
+[class*='productHighlightText'][data-highlight-type='collection'] {
+  margin-bottom: 0.5rem;
+}
+
+div[class*='vtex-search-result-3-x-sidebar'][style*='transform: translateX(110%)'] {
+  transform: translateX(-110%) !important;
+}
+
+body.overflow-hidden div[class*='vtex-store__template'] {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  [class*='flexRowContent--product-main-container']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(1) {
+    width: 100% !important;
+
+    padding-right: 18%;
+  }
+
+  [class*='flexRowContent--product-main-container']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(2) {
+    width: 100% !important;
+
+    padding-right: 0;
+  }
+
+  [class*='flexRowContent--product-main-container-avaliability']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(1) {
+    width: 100% !important;
+
+    padding-right: 0;
+  }
+
+  [class*='flexRowContent--product-main-container-avaliability']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(2) {
+    width: 100% !important;
+
+    padding-right: 0;
+  }
+
+  [class*='vtex-menu-2-x-menuContainer']
+    [class*='promofarma-store-theme-0-x-titleSectionLinkBadges']
+    ~ div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1026px) {
+  [class*='vtex-login-2-x-container'] span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  [class*='vtex-login-2-x-container'] span div {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  [class*='vtex-store-components-3-x-productImage--product-images'] div div {
+    display: flex;
+  }
+
+  [class*='currencyContainer'] span {
+    font-size: 1rem !important;
+  }
+
+  [class*='flexRowContent--product-main-container']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(1) {
+    width: 60% !important;
+
+    padding-right: 2rem;
+  }
+
+  [class*='flexRowContent--product-main-container']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(2) {
+    width: 40% !important;
+
+    padding-right: 0;
+  }
+
+  [class*='flexRowContent--product-main-container']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(3) {
+    width: 0 !important;
+  }
+
+  [class*='flexRowContent--product-main-container-avaliability']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(1) {
+    width: 60% !important;
+
+    padding-right: 2rem;
+  }
+
+  [class*='flexRowContent--product-main-container-avaliability']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(2) {
+    width: 40% !important;
+
+    padding-right: 0;
+  }
+
+  [class*='flexRowContent--product-main-container-avaliability']
+    > div[class*='vtex-flex-layout-0-x-stretchChildrenWidth']:nth-child(3) {
+    width: 0 !important;
+  }
+
+  [class*='flexRowContent--main-header'] > div:nth-child(3) {
+    flex-grow: 1;
+  }
+
+  [class*='vtex-modal-layout-0-x-paper--quickview']
+    [class*='vtex-store-components-3-x-productImage--quickview']
+    div
+    div {
+    display: flex;
+  }
+
+  [class*='vtex-menu-2-x-menuContainer']
+    [class*='promofarma-store-theme-0-x-titleSectionLinkBadges']
+    ~ div {
+    justify-content: flex-start;
+  }
+
+  [class*='flexRowContent--headerInstitutionalPage'] > button {
+    display: none;
+  }
+
+  [class*='flexRow--container-institutional']
+    > [class*='vtex-store-components-3-x-container'] {
+    max-width: none;
+  }
+
+  [class*='promofarma-store-theme-0-x-titleSectionLinkBadges'] ~ div {
+    justify-content: flex-start;
+  }
+
+  [class*='flexRowContent--social-icons']
+    > [class*='stretchChildrenWidth']:first-child {
+    width: 75% !important;
+  }
+
+  [class*='flexRowContent--social-icons']
+    > [class*='stretchChildrenWidth']:last-child {
+    width: 25% !important;
+  }
+
+  [class*='flexRowContent--social-icons-item-container']:first-child
+    > [class*='stretchChildrenWidth'] {
+    width: fit-content !important;
+  }
+
+  [class*='flexRowContent--social-icons-item-container']:last-child
+    > [class*='stretchChildrenWidth'] {
+    width: fit-content !important;
+  }
+
+  [class*='flexRowContent--searchResult']
+    > div:last-child
+    > div[class*='flexCol']
+    > div[class*='flexColChild']:first-child {
+    border-bottom: 1px solid #e5e9f2;
+  }
+
+  [class*='totalProducts--layout'] > span {
+    font-size: 0.875rem;
+  }
+}

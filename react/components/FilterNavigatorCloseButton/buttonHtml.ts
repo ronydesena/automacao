@@ -1,0 +1,2 @@
+export const BUTTON_HTML =
+  '<button id="filterCloseBtn" type="button" style="height: 1rem;width: 1rem;color: #ffffff;position: absolute;border: none;padding: 0;background-color: transparent;right: 0.875rem"><svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" x="0px" y="0px" viewBox="0 0 26.9 26.9" style="enable-background:new 0 0 26.9 26.9;"><g transform="translate(1.414 1.414)"><path class="st0" d="M0,0l24.1,24.1"/><path class="st0" d="M0,24.1L24.1,0"/></g></svg></button>'

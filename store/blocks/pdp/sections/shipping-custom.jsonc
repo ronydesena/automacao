@@ -1,0 +1,45 @@
+{
+  "shipping-custom": {
+    "props": {
+      "Trigger": "modal-trigger#pickup-points"
+    }
+  },
+
+  "modal-trigger#pickup-points": {
+    "children": ["shipping-modal-trigger", "modal-layout#pickup-points"],
+    "props": {
+      "blockClass": "modal-pickup-points"
+    }
+  },
+
+  "shipping-modal-trigger": {
+    "props": {
+      "text": "Ver todos os locais de retirada"
+    }
+  },
+
+  "modal-layout#pickup-points": {
+    "children": ["pickup-points-modal"],
+    "props": {
+      "blockClass": "modal-pickup-points"
+    }
+  },
+
+  "pickup-points-modal": {
+    "props": {
+      "title": "Locais de retirada"
+    }
+  },
+
+  "add-to-cart-button-wrapper": {
+    "props": {
+      "AddToCartButton": "add-to-cart-button#shipping-custom"
+    }
+  },
+
+  "add-to-cart-button#shipping-custom": {
+    "props": {
+      "text": "Comprar"
+    }
+  }
+}

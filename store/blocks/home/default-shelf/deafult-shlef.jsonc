@@ -1,0 +1,23 @@
+{
+  "slider-layout#default-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "infinite": false,
+      "fullWidth": false,
+      "showPaginationDots": "always",
+      "blockClass": "defaultShelf",
+      "navigationStep": "page",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 10
+    }
+  }
+}

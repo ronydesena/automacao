@@ -1,0 +1,107 @@
+/* sobre a promofarma */
+.paragraph--aboutUsTitlePage,
+.paragraph--clientService {
+  margin-bottom: 0.625rem;
+  color: #ff3333;
+  font: 600 22px Raleway;
+}
+
+.paragraph--clientService {
+  margin-bottom: 10.15px;
+}
+
+.paragraph--title-Topic-mobile-accordion {
+  font: normal normal 600 16px Raleway;
+  white-space: nowrap;
+  padding-left: 22px;
+}
+
+.paragraph--about {
+  font-size: 0.875rem;
+}
+
+/* about-us page */
+.paragraph--about-subtitle {
+  margin-bottom: 0.25rem;
+  color: #ff3333;
+  font-size: 18px;
+  font-weight: 600;
+}
+.paragraph--help-message {
+  text-align: left;
+}
+.paragraph--about-qoute:first-child::before {
+  content: '”';
+  font: 86px Raleway;
+  text-align: center;
+  display: flex;
+  color: #ff3333;
+  justify-content: center;
+  margin: 0 0 -35px;
+}
+
+.paragraph--founder {
+  font-size: 0.875rem;
+
+  color: #ff3333;
+}
+
+.container--about-subtitle {
+  padding: 0 1rem;
+}
+
+.wrapper--about-qoute {
+  padding: 0 1rem;
+
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .paragraph--about {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container--about {
+    max-width: 1000px;
+  }
+
+  .container--about-qoute {
+    max-width: 29.125rem;
+    margin: 0 auto;
+  }
+
+  .container--about-qoute {
+    padding: 0 1rem;
+  }
+
+  .container--aboutUsTitlePage {
+    padding: 0 !important;
+  }
+
+  .container--aboutUsTitlePage {
+    justify-content: center;
+  }
+
+  .container--about-subtitle {
+    justify-content: center;
+  }
+
+  .wrapper--title-Topic-mobile-accordion {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .paragraph--title-Topic-mobile-accordion {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .container--help-message {
+    justify-content: start;
+  }
+
+  .paragraph--about-subtitle {
+    font-size: 1.375rem;
+  }
+}

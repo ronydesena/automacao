@@ -1,0 +1,7 @@
+.summarySmallContent--summary-totalizers .summaryItemLabel,
+.summarySmallContent--summary-totalizers .summaryItemPrice {
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  color: #787a7f;
+}

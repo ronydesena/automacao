@@ -1,0 +1,30 @@
+{
+  "product-summary.shelf#latests": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button#default"
+    ]
+  },
+  "list-context.product-list#latests": {
+    "blocks": ["product-summary.shelf#latests"],
+    "children": ["slider-layout#default-shelf"]
+  },
+  "rich-text#latests": {
+    "props": {
+      "blockClass": "shelf-title",
+      "text": "Novidades"
+    }
+  },
+  "flex-layout.col#container-latests": {
+    "children": ["rich-text#latests", "list-context.product-list#latests"],
+    "props": {
+      "blockClass": "latests"
+    }
+  },
+  "flex-layout.row#container-latests": {
+    "children": ["flex-layout.col#container-latests"]
+  }
+}

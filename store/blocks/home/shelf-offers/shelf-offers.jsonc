@@ -1,0 +1,30 @@
+{
+  "product-summary.shelf#offers": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button#default"
+    ]
+  },
+  "list-context.product-list#offers": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#default-shelf"]
+  },
+  "rich-text#offers": {
+    "props": {
+      "blockClass": "shelf-title",
+      "text": "Ofertas"
+    }
+  },
+  "flex-layout.col#container-offers": {
+    "children": ["rich-text#offers", "list-context.product-list#offers"],
+    "props": {
+      "blockClass": "container-offers"
+    }
+  },
+  "flex-layout.row#container-offers": {
+    "children": ["flex-layout.col#container-offers"]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "store.custom#faq": {
+    "children": ["flex-layout.row#faq"]
+  },
+
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq"
+    },
+    "children": ["flex-layout.col#faq"]
+  },
+
+  "flex-layout.col#faq": {
+    "children": ["rich-text#faq", "disclosure-layout-group#group"]
+  },
+  "rich-text#faq": {
+    "props": {
+      "text": "## FAQ"
+    }
+  },
+
+  "disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#first",
+      "disclosure-layout#second",
+      "disclosure-layout#third",
+      "disclosure-layout#fourth"
+    ]
+  },
+
+  "disclosure-layout#first": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator#down-up", "rich-text#question1"]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1-faq"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer1-faq": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+
+  "disclosure-layout#second": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator#down-up", "rich-text#question2"]
+  },
+  "disclosure-content#second": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2-faq"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "How can I track my order?"
+    }
+  },
+  "rich-text#answer2-faq": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+  "disclosure-layout#third": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator#down-up", "rich-text#question3"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3-faq"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer3-faq": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+
+  "disclosure-layout#fourth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
+  },
+  "disclosure-trigger#fourth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator#down-up", "rich-text#question4"]
+  },
+  "disclosure-content#fourth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2-faq"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "How can I track my order?"
+    }
+  },
+  "rich-text#answer4-faq": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+  "disclosure-state-indicator#down-up": {
+    "props": {
+      "Show": "icon-caret#down-faq",
+      "Hide": "icon-caret#up-faq"
+    }
+  },
+  "icon-caret#down-faq": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up-faq": {
+    "props": {
+      "orientation": "up"
+    }
+  }
+}

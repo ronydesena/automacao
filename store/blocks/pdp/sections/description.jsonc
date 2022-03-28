@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "product-description"
+    },
+    "children": ["product-description"]
+  },
+  "product-description": {
+    "props": {
+      "title": "Descrição"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.trigger {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border: 0;
+  border-bottom: 1px solid #E5E9F2;
+}
+
+@media (min-width: 640px) {
+  .trigger {
+    border-bottom: none;
+  }
+}

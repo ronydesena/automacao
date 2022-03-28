@@ -1,0 +1,14 @@
+{
+  "store.custom#about-us": {
+    "path": "/sobre"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#contact-us": {
+    "path": "/fale-conosco"
+  },
+  "store.custom#institutional": {
+    "path": "/sobre-promofarma"
+  }
+}

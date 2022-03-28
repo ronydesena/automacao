@@ -1,0 +1,162 @@
+.flexCol--buy-box-desktop {
+  border: 1px solid #e5e9f2;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+
+  background-color: #fff;
+
+  box-shadow: 0px 3px 12px #0000001a;
+}
+
+.flexRow--buy-box-mobile {
+  border: 1px solid #e5e9f2;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  background-color: #fff;
+
+  box-shadow: 0px 3px 12px #0000001a;
+}
+
+.flexRowContent--selling-price-and-quantity {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 0.25rem 0;
+}
+
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+  margin: auto 0;
+}
+
+.flexCol--info-availability {
+  height: fit-content;
+
+  border: 1px solid #e5e9f2;
+  border-radius: 0.5rem;
+  margin: auto 0;
+  padding: 0 1rem;
+
+  background-color: #fff;
+
+  box-shadow: 0px 3px 12px #0000001a;
+}
+
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-sellingPriceValue)
+  :global(.vtex-product-price-1-x-currencyCode),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-sellingPriceValue)
+  :global(.vtex-product-price-1-x-currencyLiteral),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-sellingPriceValue)
+  :global(.vtex-product-price-1-x-currencyInteger),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-sellingPriceValue)
+  :global(.vtex-product-price-1-x-currencyDecimal),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-sellingPriceValue)
+  :global(.vtex-product-price-1-x-currencyFraction) {
+  font-size: 1.625rem !important;
+  font-weight: bold !important;
+  line-height: 1.5rem;
+
+  color: #48494c;
+}
+
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyCode),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyLiteral),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyInteger),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyDecimal),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-price-1-x-listPriceValue)
+  :global(.vtex-product-price-1-x-currencyFraction) {
+  font-size: 1rem !important;
+
+  color: #787a7f;
+}
+
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-product-quantity-1-x-quantitySelectorTitle) {
+  display: none;
+}
+
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-numeric-stepper__input) {
+  height: 2rem;
+  width: 3.25rem;
+
+  border: none;
+  border-radius: 4px;
+  margin: 0 0.25rem;
+
+  font-size: 1rem;
+
+  background-color: #e5e9f2;
+}
+
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-numeric-stepper__plus-button),
+.flexRowContent--selling-price-and-quantity
+  :global(.vtex-numeric-stepper__minus-button) {
+  height: 2rem;
+  width: 2rem;
+
+  border: none;
+  border-radius: 4px !important;
+
+  background-color: #e5e9f2;
+}
+
+.flexRowContent--product-data {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.flexRowContent--product-data-availability {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  .flexRowContent--buy-box-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--buy-box-mobile .stretchChildrenWidth {
+    width: 100% !important;
+
+    padding: 0;
+  }
+
+  .flexRowContent--assembly-modal-trigger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--assembly-modal-trigger .stretchChildrenWidth {
+    width: 100% !important;
+
+    padding: 0;
+  }
+}
+
+@media (min-width: 1026px) {
+  .flexRowContent--selling-price-and-quantity
+    :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+    margin: 0;
+  }
+}

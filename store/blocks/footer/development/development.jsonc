@@ -1,0 +1,65 @@
+{
+  "flex-layout.col#development": {
+    "children": [
+      "flex-layout.col#developer",
+      "flex-layout.col#platform"
+    ],
+    "props": {
+      "blockClass": "developers"
+    }
+  },
+  "flex-layout.row#development": {
+    "children": [
+      "flex-layout.col#developer",
+      "flex-layout.col#platform"
+    ],
+    "props": {
+      "preserveLayoutMobile": "true",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#developer": {
+    "children": ["rich-text#developer", "image#developer"],
+    "props": {
+      "blockClass": ["developer"],
+      "width": "25%"
+    }
+  },
+  "image#developer": {
+    "props": {
+      "blockClass": "development-image",
+      "maxHeight": 48,
+      "src": "https://promofarma.vtexassets.com/assets/vtex.file-manager-graphql/images/2eeadbae-ab68-43f1-a461-3f72c0961612___4927fd37b8b5252fe05b811ded3e7b14.svg"
+    }
+  },
+  "rich-text#developer": {
+    "props": {
+      "blockClass": "development-text",
+      "text": "Desenvolvimento",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#platform": {
+    "children": ["rich-text#platform", "image#platform"],
+    "props": {
+      "blockClass": ["platform"],
+      "width": "25%"
+    }
+  },
+  "image#platform": {
+    "props": {
+      "blockClass": "development-image",
+      "maxHeight": 48,
+      "src": " https://promofarma.vtexassets.com/assets/vtex.file-manager-graphql/images/a300132e-9d7e-4672-9872-551019a175f9___245bb53b7281faa26a68836aba2e2d63.svg"
+    }
+  },
+  "rich-text#platform": {
+    "props": {
+      "blockClass": ["platform"],
+      "text": "Plataforma",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

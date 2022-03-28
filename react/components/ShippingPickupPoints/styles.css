@@ -1,0 +1,45 @@
+.pickupPointsContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 0.5rem;
+}
+
+.pickupPointsAddress {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #48494c;
+}
+
+.pickupPointsDistance {
+  margin: 0 0 0 1.55rem;
+
+  font-size: 0.875rem;
+
+  color: #ff3333;
+}
+
+.pickupPointsTimeRemaining {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #ff3333;
+}
+
+.pickupRow {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.pickupPointsLocationIcon {
+  height: 0.875rem;
+  width: 0.875rem;
+
+  margin-right: 0.875rem;
+}

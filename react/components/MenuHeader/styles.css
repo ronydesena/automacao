@@ -1,0 +1,39 @@
+.menuHeader {
+  height: 3rem;
+  width: 100%;
+
+  background-color: #FF3333;
+}
+
+.menuHeaderButton {
+  display: flex;
+
+  align-items: center;
+
+  height: 100%;
+  width: 90%;
+
+  border: none;
+  gap: 0.75rem;
+  padding: 0 0 0 1rem;
+
+  background-color: transparent;
+}
+
+.menuHeaderTitle {
+  margin: 0;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+.menuUserIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+
+  color: #fff;
+
+  filter: brightness(0) invert(1);
+}

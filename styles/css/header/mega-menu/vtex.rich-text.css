@@ -1,0 +1,22 @@
+.container--trigger-mega-menu {
+  display: flex;
+
+  align-items: center;
+}
+
+.paragraph--trigger-mega-menu {
+  display: none;
+}
+
+@media (min-width: 1120px) {
+  .paragraph--trigger-mega-menu {
+    display: block;
+
+    margin: 0;
+
+    font-size: 0.875rem;
+    white-space: nowrap;
+
+    color: #787a7f;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "back-button#product-page-desktop": {
+    "props": {
+      "label": "Voltar",
+      "position": {
+        "top": 16,
+        "left": 0
+      }
+    }
+  }
+}

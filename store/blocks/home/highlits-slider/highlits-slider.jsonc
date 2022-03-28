@@ -1,0 +1,49 @@
+{
+  "list-context.image-list#highlights-slider": {
+    "children": ["slider-layout#highlights-slider"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "mobile"
+        }
+      ]
+    }
+  },
+  "slider-layout#highlights-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "infinite": false,
+      "blockClass": "highlights-slider",
+      "showPaginationDots": "never",
+      "navigationStep": 1,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 10
+    }
+  },
+  "rich-text#highlights-slider": {
+    "props": {
+      "blockClass": "slider-title",
+      "text": "Destaques"
+    }
+  },
+  "flex-layout.col#highlights-slider": {
+    "children": [
+      "rich-text#highlights-slider",
+      "list-context.image-list#highlights-slider"
+    ],
+    "props": {
+      "blockClass": "highlights-slider"
+    }
+  }
+}

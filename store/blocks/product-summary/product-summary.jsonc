@@ -1,0 +1,125 @@
+{
+  "product-summary.shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "flex-layout.row#price-container",
+      "add-to-cart-button#default"
+    ]
+  },
+  "flex-layout.col#productRating": {
+    "props": {
+      "blockClass": "productRating"
+    },
+    "children": ["product-rating-inline"]
+  },
+
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf",
+      "flex-layout.row#highlights-container",
+      "modal-trigger#quickview"
+    ]
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+
+  "flex-layout.row#highlights-container": {
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#collection-collection",
+      "vtex.product-highlights@2.x:product-highlights#collection-teaser",
+      "product-price-savings#summaryPercentage"
+    ],
+    "props": {
+      "blockClass": "highlights-container"
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collection-promotion": {
+    "props": {
+      "type": "promotion"
+    },
+    "children": ["product-highlight-wrapper#promotion"]
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection-teaser": {
+    "props": {
+      "type": "teaser"
+    },
+    "children": ["product-highlight-wrapper#teaser"]
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection-collection": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Tratamento para Cabelos"]
+      }
+    },
+    "children": ["product-highlight-wrapper#promotion"]
+  },
+  "product-highlight-wrapper#promotion": {
+    "props": {
+      "blockClass": "collection-promotion"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-wrapper#teaser": {
+    "props": {
+      "blockClass": "collection-teaser"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "product-selling-price#summary",
+      "product-price-savings#summary"
+    ]
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": ["discount"],
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#shelf": {
+    "props": {
+      "blockClass": "summary",
+      "markers": ["highlight"],
+      "percentageStyle": "compact",
+      "message": "{savingsPercentage}"
+    }
+  }
+}

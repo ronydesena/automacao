@@ -1,0 +1,30 @@
+{
+  "logo#mobile": {
+    "props": {
+      "title": "Logo - mobile",
+      "href": "/",
+      "url": "assets/icons/logo-promofarma.svg",
+      "width": "140",
+      "blockClass": "logo-mobile"
+    }
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo - desktop",
+      "href": "/",
+      "url": "assets/icons/logo-promofarma.svg",
+      "width": "180",
+      "blockClass": "logo-desktop"
+    }
+  },
+  "logo#desktopWhite": {
+    "props": {
+      "title": "Logo - desktop",
+      "href": "/",
+      "url": "assets/icons/logo-white.svg",
+      "width": "229",
+      "blockClass": "logo-desktopWhite"
+    }
+  }
+}

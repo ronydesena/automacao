@@ -1,0 +1,17 @@
+{
+  "flex-layout.row#product-availability-desktop": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "blockClass": "product-main-container-availability"
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability",
+      "back-button#product-page-desktop"
+    ]
+  }
+}

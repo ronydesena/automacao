@@ -1,0 +1,97 @@
+.flexRow--footer-links-mobile {
+  padding-bottom: 1rem;
+  background: #48494c;
+}
+.flexColChild--developer,
+.flexColChild--platform {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRow--footer-links {
+  max-width: calc(75rem + 2rem);
+  margin: 0 auto;
+}
+
+.flexRowContent--payment-methods-item-container,
+.flexRowContent--security-badges-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.flexColChild--payment-methods-container,
+.flexColChild--security-badges-container,
+.flexColChild--social-icons-container {
+  height: fit-content !important;
+}
+
+.flexRowContent--social-icons-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.flexRowContent--payment-methods-item-container .stretchChildrenWidth,
+.flexRowContent--security-badges-item-container .stretchChildrenWidth,
+.flexRowContent--social-icons-item-container .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+@media (min-width: 1026px) {
+  .flexColChild--footer-links {
+    height: initial !important;
+  }
+  .flexCol--developers {
+    flex-direction: row !important;
+    justify-content: flex-end;
+  }
+
+  .flexRowContent--copyAndDevelopers {
+    align-items: center;
+  }
+
+  .flexRow--copyAndDevelopers {
+    background: #ffffff;
+    padding: 1rem 3rem;
+  }
+
+  .flexRow--footer-links {
+    padding: 1rem 0rem 3rem 0rem;
+  }
+
+  .flexRow--social-icons {
+    border-bottom: 1px solid #787a7f;
+    padding: 2.75rem 1rem 2.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .flexColChild--developers {
+    margin-right: 2rem;
+  }
+
+  .flexRowContent--payment-methods-item-container,
+  .flexRowContent--security-badges-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 3rem);
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+    justify-content: initial;
+  }
+
+  .flexRowContent--social-icons-item-container {
+    padding-bottom: 0 !important;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .flexRowContent--payment-methods-item-container,
+  .flexRowContent--security-badges-item-container {
+    column-gap: 2rem;
+  }
+}

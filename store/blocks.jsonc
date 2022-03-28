@@ -1,0 +1,92 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    },
+    "children": ["my-account-back-button"]
+  },
+
+  "store.login": {
+    "blocks": [
+      "flex-layout.row#login-title-and-back-button",
+      "login-content#default"
+    ]
+  },
+
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Entrar",
+      "optionsTitle": "Entrar com chave de acesso"
+    }
+  },
+
+  "login-content#default": {
+    "props": {
+      "defaultOption": 1,
+      "isInitialScreenOptionOnly": false,
+      "optionsTitle": "Entrar com chave de acesso",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "flex-layout.row#login-title-and-back-button": {
+    "children": ["rich-text#login-title", "back-button#login"],
+    "props": {
+      "blockClass": "login-title-and-back-button"
+    }
+  },
+
+  "back-button#login": {
+    "props": {
+      "label": "Voltar",
+      "arrowColor": "#48494C",
+      "position": {
+        "top": 16,
+        "right": 0
+      }
+    }
+  },
+
+  "rich-text#login-title": {
+    "props": {
+      "blockClass": "loginTitle",
+      "text": "Login"
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  }
+}

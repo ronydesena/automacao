@@ -1,0 +1,324 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#footer-atendimento",
+      "flex-layout.row#footer-institucional",
+      "flex-layout.row#footer-nossos-servicos",
+      "flex-layout.col#social-icons",
+      "flex-layout.col#payment-methods",
+      "flex-layout.col#security-badges"
+    ]
+  },
+  //Insittucional
+  "flex-layout.row#footer-institucional": {
+    "children": ["flex-layout.col#institucional"]
+  },
+  "flex-layout.col#institucional": {
+    "children": [
+      "rich-text#title-institucional",
+      "link#sobre",
+      "link#politica-de-entrega",
+      "link#politica-de-privacidade",
+      "link#formas-de-pagamento",
+      "link#fale-conosco"
+    ],
+    "props": {
+      "blockClass": "footer-links"
+    }
+  },
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": "title-section-link",
+      "font": "t-body",
+      "text": "Institucional",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "link#sobre": {
+    "props": {
+      "href": "/sobre-promofarma",
+      "label": "Sobre a promofarma",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#politica-de-entrega": {
+    "props": {
+      "href": "/sobre",
+      "label": "Política de Entrega e Retirada",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#politica-de-privacidade": {
+    "props": {
+      "href": "/sobre",
+      "label": "Política de Privacidade",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#formas-de-pagamento": {
+    "props": {
+      "href": "/sobre",
+      "label": "Forma de Pagamento",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#fale-conosco": {
+    "props": {
+      "href": "/sobre",
+      "label": "Fale conosco",
+      "blockClass": "footer-link"
+    }
+  },
+
+  //Nossos serviços
+  "flex-layout.row#footer-nossos-servicos": {
+    "children": ["flex-layout.col#nossos-servicos"]
+  },
+  "flex-layout.col#nossos-servicos": {
+    "children": [
+      "rich-text#title-nossos-servicos",
+      "link#teste-covid",
+      "link#aplicacao-de-vacinas",
+      "link#aferir-pressao",
+      "link#controle-de-peso"
+    ],
+    "props": {
+      "blockClass": "footer-links"
+    }
+  },
+  "rich-text#title-nossos-servicos": {
+    "props": {
+      "blockClass": "title-section-link",
+      "font": "t-body",
+      "text": "Nossos Serviços",
+      "textAlignment": "CENTER",
+      "textColor": "base",
+      "textPosition": "CENTER"
+    }
+  },
+  "link#teste-covid": {
+    "props": {
+      "href": "/teste-covid",
+      "label": "Teste de Covid-19",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#aplicacao-de-vacinas": {
+    "props": {
+      "href": "/aplicacao-de-vacinas",
+      "label": "Aplicação de Vacinas",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#aferir-pressao": {
+    "props": {
+      "href": "/aferir-pressao",
+      "label": "Aferir Pressão",
+      "blockClass": "footer-link"
+    }
+  },
+  "link#controle-de-peso": {
+    "props": {
+      "href": "/controle-de-peso",
+      "label": "Controle de Peso",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "flex-layout.col#paymentWithSecurity": {
+    "children": [
+      "flex-layout.col#payment-methods",
+      "flex-layout.col#security-badges"
+    ],
+    "props": {
+      "blockClass": ["payment"]
+    }
+  },
+  "flex-layout.row#copyAndDevelopers": {
+    "children": ["flex-layout.col#copy", "flex-layout.col#development"],
+    "props": {
+      "blockClass": "copyAndDevelopers"
+    }
+  },
+  "flex-layout.col#copy": {
+    "children": ["rich-text#footer-mobile"]
+  },
+  "flex-layout.col#social-icons": {
+    "children": [
+      "rich-text#social-icons-title",
+      "flex-layout.row#social-icons-item-container"
+    ],
+    "props": {
+      "blockClass": "social-icons-container"
+    }
+  },
+  "flex-layout.col#payment-methods": {
+    "children": [
+      "rich-text#payment-methods-title",
+      "flex-layout.row#payment-methods-item-container"
+    ],
+    "props": {
+      "blockClass": "payment-methods-container"
+    }
+  },
+  "flex-layout.col#security-badges": {
+    "children": [
+      "rich-text#security-badges-title",
+      "flex-layout.row#security-badges-item-container"
+    ],
+    "props": {
+      "blockClass": "security-badges-container"
+    }
+  },
+  "rich-text#social-icons-title": {
+    "props": {
+      "blockClass": "social-icons-title",
+      "text": "Siga-nos em nossas Redes Sociais"
+    }
+  },
+  "rich-text#payment-methods-title": {
+    "props": {
+      "blockClass": "payment-methods-title",
+      "text": "Formas de pagamento"
+    }
+  },
+  "rich-text#security-badges-title": {
+    "props": {
+      "blockClass": "security-badges-title",
+      "text": "Segurança"
+    }
+  },
+  "flex-layout.row#social-icons-item-container": {
+    "children": [
+      "image#social-icon-1",
+      "image#social-icon-2",
+      "image#social-icon-3"
+    ],
+    "props": {
+      "blockClass": "social-icons-item-container"
+    }
+  },
+  "flex-layout.row#payment-methods-item-container": {
+    "children": [
+      "image#payment-method-1",
+      "image#payment-method-2",
+      "image#payment-method-3",
+      "image#payment-method-4",
+      "image#payment-method-5",
+      "image#payment-method-6"
+    ],
+    "props": {
+      "blockClass": "payment-methods-item-container"
+    }
+  },
+  "flex-layout.row#security-badges-item-container": {
+    "children": [
+      "image#security-badge-1",
+      "image#security-badge-2",
+      "image#security-badge-3"
+    ],
+    "props": {
+      "blockClass": "security-badges-item-container"
+    }
+  },
+  "image#social-icon-1": {
+    "props": {
+      "blockClass": "social-icons-icon",
+      "src": "assets/icons/social-facebook-white.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.facebook.com/promofarma.drogarias"
+      },
+      "maxHeight": 30
+    }
+  },
+  "image#social-icon-2": {
+    "props": {
+      "blockClass": "social-icons-icon",
+      "src": "assets/icons/social-instagram-white.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.instagram.com/promofarma.drogarias/"
+      },
+      "maxHeight": 30
+    }
+  },
+  "image#social-icon-3": {
+    "props": {
+      "blockClass": "social-icons-icon",
+      "src": "assets/icons/social-linkedin-white.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.linkedin.com/company/promofarma-drogarias/"
+      },
+      "maxHeight": 30
+    }
+  },
+  "image#payment-method-1": {
+    "props": {
+      "blockClass": "payment-methods-icon",
+      "src": "assets/icons/payment-american-express.svg",
+      "maxHeight": 30
+    }
+  },
+  "image#payment-method-2": {
+    "props": {
+      "blockClass": "payment-methods-icon",
+      "src": "assets/icons/payment-discover.svg",
+      "maxHeight": 30
+    }
+  },
+  "image#payment-method-3": {
+    "props": {
+      "blockClass": "payment-methods-icon",
+      "src": "assets/icons/payment-elo.svg",
+      "maxHeight": 30
+    }
+  },
+  "image#payment-method-4": {
+    "props": {
+      "blockClass": "payment-methods-icon",
+      "src": "assets/icons/payment-paypal.svg",
+      "maxHeight": 30
+    }
+  },
+  "image#payment-method-5": {
+    "props": {
+      "blockClass": "payment-methods-icon",
+      "src": "assets/icons/payment-google-pay.svg",
+      "maxHeight": 30
+    }
+  },
+  "image#payment-method-6": {
+    "props": {
+      "blockClass": "payment-methods-icon",
+      "src": "assets/icons/payment-mastercard.svg",
+      "maxHeight": 30
+    }
+  },
+  "image#security-badge-1": {
+    "props": {
+      "blockClass": "security-badges-icon",
+      "src": "assets/icons/badge-1.png",
+      "maxHeight": 60
+    }
+  },
+  "image#security-badge-2": {
+    "props": {
+      "blockClass": "security-badges-icon",
+      "src": "assets/icons/badge-2.png",
+      "maxHeight": 60
+    }
+  },
+  "image#security-badge-3": {
+    "props": {
+      "blockClass": "security-badges-icon",
+      "src": "assets/icons/badge-3.png",
+      "maxHeight": 60
+    }
+  }
+}

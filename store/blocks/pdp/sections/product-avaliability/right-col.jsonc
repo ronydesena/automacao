@@ -1,0 +1,28 @@
+{
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "info-availability"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#product-data-availability",
+      "product-separator",
+      "sku-selector",
+      "flex-layout.row#availability"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": ["availability-subscriber"]
+  },
+  "flex-layout.row#product-data-availability": {
+    "children": ["product-brand", "product-identifier.product"],
+    "props": {
+      "blockClass": "product-data-availability"
+    }
+  }
+}

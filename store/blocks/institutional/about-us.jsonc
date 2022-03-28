@@ -1,0 +1,142 @@
+{
+  "store.custom#about-us": {
+    "blocks": ["flex-layout.row#about-us-header"]
+  },
+
+  "flex-layout.row#about-us-header": {
+    "children": [
+      "custom-breadcrumb",
+      "flex-layout.row#aboutUs-header",
+      "flex-layout.row#text-about-us"
+    ],
+    "props": {
+      "blockClass": "container-institutional"
+    }
+  },
+
+  "flex-layout.row#aboutUs-header": {
+    "children": ["rich-text#aboutUsTitlePage", "back-button#about-us"],
+    "props": {
+      "blockClass": "headerInstitutionalPage"
+    }
+  },
+
+  "rich-text#aboutUsTitlePage": {
+    "title": "Titulo - Pagina",
+    "props": {
+      "text": "A Promofarma",
+      "font": "t-heading-4",
+      "blockClass": "aboutUsTitlePage"
+    }
+  },
+
+  "back-button#about-us": {
+    "props": {
+      "label": "Voltar",
+      "arrowColor": "#48494C",
+      "position": {
+        "top": 22,
+        "right": 12
+      }
+    }
+  },
+
+  "flex-layout.row#text-about-us": {
+    "children": [
+      "rich-text#about-us1",
+      "rich-text#about-us2",
+      "rich-text#about-us-subtitle",
+      "rich-text#about-us3",
+      "flex-layout.col#card",
+      "rich-text#about-us4",
+      "rich-text#about-us5",
+      "rich-text#about-us6",
+      "rich-text#about-us7",
+      "flex-layout.col#vertical-timeline"
+    ],
+    "props": {
+      "blockClass": "content-institutional",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#about-us1": {
+    "props": {
+      "text": "A Promofarma iniciou suas atividades em 1964, quando seu fundador Silvio Nakano, abriu as portas pela primeira vez em uma loja no Lauzane Paulista.",
+      "blockClass": "about"
+    }
+  },
+  "rich-text#about-us2": {
+    "props": {
+      "text": "Através de muito trabalho e dedicação, a PromoFarma foi crescendo, e hoje conta mais de ​50 lojas e sistema de delivery (entrega em domicílio). Tudo isso e muito mais para para melhor atender seus clientes, estando sempre presente e oferecendo comodidade e os melhores preços.",
+      "blockClass": "about"
+    }
+  },
+  "rich-text#about-us-subtitle": {
+    "props": {
+      "text": "É para você que trabalhamos.",
+      "blockClass": "about-subtitle"
+    }
+  },
+  "rich-text#about-us3": {
+    "props": {
+      "text": "Cuidar da saúde de todos, sempre com atenção e simpatia, proporcionando economia aos nossos clientes e visando o nosso crescimento sustentável de estrutura de lojas, estoques, logística e entrega.",
+      "blockClass": "about"
+    }
+  },
+
+  "flex-layout.col#card": {
+    "children": ["rich-text#about-us-objective", "rich-text#founder"],
+    "props": {
+      "blockClass": "card-quote"
+    }
+  },
+  "rich-text#about-us-objective": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Nosso maior objetivo era servir com excelência os nossos clientes, levando até eles os medicamentos que precisavam com os melhores preços do mercado.\n\n Assim nasceu a Promofarma.",
+      "blockClass": "about-qoute"
+    }
+  },
+  "rich-text#founder": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Silvio Nakano \n Fundador",
+      "blockClass": "founder"
+    }
+  },
+
+  "rich-text#about-us4": {
+    "props": {
+      "text": "Silvio Nakano nasceu em 1931, no município de Presidente Prudente, no interior do estado de São Paulo. Separado de seus pais biológicos, levava uma vida simples, sem fartura e privilégios. Apesar das dificuldades encontradas no caminho, buscava sempre a humildade, equilíbrio e desejo de viver cada dia mais. Desde novo, começou a trabalhar como balconista em uma farmácia de sua região, ganhando apenas um salário mínimo. Sua esposa Shisa Nakano, complementava a renda exercendo seu trabalho como costureira.",
+      "blockClass": "about"
+    }
+  },
+  "rich-text#about-us5": {
+    "props": {
+      "text": "Em 1964, com muito trabalho e esforço, Silvio conseguiu comprar sua primeira farmácia. Apesar da conquista, teve que dividir o pagamento em várias prestações, mas sempre teve em mente que muitas vezes para empreender, é preciso ter coragem e aceitar o que a vida oferece.",
+      "blockClass": "about"
+    }
+  },
+  "rich-text#about-us6": {
+    "props": {
+      "text": "Sabemos que toda escolha significa mudança, e toda mudança requer tempo, dedicação e paciência. O que começou apenas com uma portinha e balcão, hoje é uma rede com mais de 60 lojas. Além do mais, o que antes era um sonho de uma pessoa só, atualmente representa um sonho de 1.000 colaboradores unidos em um mesmo propósito: dedicação, valorização e respeito à vida.",
+      "blockClass": "about"
+    }
+  },
+  "rich-text#about-us7": {
+    "props": {
+      "text": "Não perdemos nossas raízes, somos gente que gosta de gente. Colocamos o cliente sempre em primeiro lugar. Para nós, cuidar da saúde é um ato de amor.",
+      "blockClass": "about"
+    }
+  },
+
+  "flex-layout.col#vertical-timeline": {
+    "children": ["custom-vertical-timeline"],
+    "props": {
+      "blockClass": "vertical-timeline"
+    }
+  }
+}

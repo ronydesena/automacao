@@ -1,0 +1,58 @@
+.container :global(.vtex-button__label) {
+  width: 3.375rem;
+
+  padding: 0 1.1rem 0 0.9rem !important;
+}
+
+.profile {
+  display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1025px) {
+  .container :global(.vtex-button__label) .label {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1026px) {
+  .container :global(.vtex-button) {
+    width: fit-content;
+  }
+
+  .container :global(.vtex-button__label) {
+    min-width: 4rem;
+    width: fit-content;
+
+    padding: 0 0.375rem 0 0.25rem !important;
+  }
+
+  .container :global(.vtex-button__label) .label {
+    padding: 0.125rem 0 0 0;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: none;
+
+    color: #48494c;
+  }
+
+  .profile {
+    display: block;
+
+    width: 5rem;
+
+    padding: 0.125rem 0 0 0;
+
+    font-size: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    color: #48494c;
+  }
+
+  .profile::before {
+    content: 'Minha conta';
+
+    font-size: 0.75rem;
+  }
+}

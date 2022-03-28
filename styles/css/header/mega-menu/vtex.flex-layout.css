@@ -1,0 +1,116 @@
+@media (min-width: 1026px) {
+  .flexRowContent--mega-menu-container :global(.vtex-mega-menu-2-x-menuItem) {
+    background-color: transparent !important;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-styledLinkText) {
+    font-size: 0.875rem;
+
+    color: #787a7f;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-accordionIconContainer) {
+    filter: invert(46%) sepia(70%) saturate(6817%) hue-rotate(343deg)
+      brightness(103%) contrast(105%);
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-accordionIconContainer)
+    :global(.vtex-mega-menu-2-x-caretIcon) {
+    height: 0.625rem;
+    width: 0.625rem;
+  }
+
+  .flexRowContent--mega-menu-container :global(.vtex-mega-menu-2-x-seeAllLink) {
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    color: #787a7f;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuContainer) {
+    width: calc(100% - 300px);
+
+    padding: 0;
+
+    overflow: hidden;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuContainer)
+    :global(.vtex-mega-menu-2-x-submenuItem) {
+    display: none;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuList) {
+    height: calc(100% - 4rem);
+    width: calc(100% - 3rem);
+
+    margin: 1rem 1.5rem 0 1.5rem;
+    padding-bottom: 1rem;
+
+    overflow-y: auto;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuList)::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuList)::-webkit-scrollbar-track {
+    border-radius: 10px;
+
+    background: #e5e9f2;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuList)::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+
+    background: #ff3333;
+  }
+
+  .flexRowContent--mega-menu-container
+    :global(.vtex-mega-menu-2-x-submenuList)::-webkit-scrollbar-thumb:hover {
+    filter: brightness(0.9);
+  }
+
+  .flexCol--trigger-mega-menu {
+    display: flex;
+  }
+
+  .flexRowContent--trigger-mega-menu :global(.vtex-button) {
+    width: fit-content;
+
+    padding: 0.5rem 1rem;
+  }
+
+  .flexRowContent--trigger-mega-menu .stretchChildrenWidth {
+    width: fit-content !important;
+  }
+
+  .flexRow--trigger-mega-menu {
+    display: flex;
+
+    align-items: center;
+  }
+
+  .flexRowContent--trigger-mega-menu
+    :global(.vtex-mega-menu-2-x-triggerButtonIcon) {
+    height: 1.375rem;
+    width: 1.375rem;
+  }
+}
+
+@media (min-width: 1120px) {
+  .flexRowContent--trigger-mega-menu {
+    display: flex;
+
+    gap: 0.5rem;
+  }
+}

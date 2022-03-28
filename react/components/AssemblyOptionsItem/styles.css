@@ -1,0 +1,77 @@
+.assemblyOptionsItemContainer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 2.5rem;
+  width: 6.625rem;
+
+  border: 1px solid #c1c4cc;
+  border-radius: 0.25rem;
+  padding: 0;
+
+  background-color: transparent;
+}
+
+.assemblyOptionsItemContainer:hover {
+  cursor: pointer;
+}
+
+.assemblyOptionsItemSelectActive {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 1.125rem;
+  width: 1.125rem;
+
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  background-color: #ff3333;
+}
+
+.assemblyOptionsItemSelectActive div {
+  height: 0.625rem;
+  width: 0.625rem;
+
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.assemblyOptionsItemSelect {
+  height: 1.125rem;
+  width: 1.125rem;
+
+  border: 1px solid #787a7f;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.assemblyOptionsItemSelect div {
+  display: none;
+}
+
+.assemblyOptionsItemLabel {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  max-width: 7ch;
+  min-width: 6ch;
+  margin: 0;
+
+  font-size: 0.875rem;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+
+  color: #787a7f;
+
+  overflow: hidden;
+}
+
+.assemblyOptionsItemLabel:hover {
+  cursor: pointer;
+}

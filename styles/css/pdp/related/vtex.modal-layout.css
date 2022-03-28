@@ -1,0 +1,153 @@
+.paper--quickview {
+  min-width: 320px;
+  max-width: 75rem;
+}
+
+.actionsContainer--quickview {
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 150ms ease-in-out, border-top 150ms ease-in-out;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: transparent;
+  box-shadow: -4px 0px 27px -12px transparent;
+}
+
+.actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) {
+  border-top-color: rgb(238, 238, 238);
+  box-shadow: -4px 0px 27px -12px rgba(0, 0, 0, 0.64);
+}
+
+.actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview)
+  .actionsContentWrapper {
+  border-top-color: transparent;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-numeric-stepper__input) {
+  height: 2.5rem;
+  width: 3.25rem;
+
+  border: none;
+  border-radius: 4px;
+  margin: 0 0.25rem;
+
+  font-size: 1rem;
+
+  background-color: #e5e9f2;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-numeric-stepper__plus-button),
+.actionsContentWrapper--quickview :global(.vtex-numeric-stepper__minus-button) {
+  height: 2.5rem;
+  width: 2.5rem;
+
+  border: none;
+  border-radius: 4px !important;
+
+  background-color: #e5e9f2;
+}
+
+.actionsContentWrapper--quickview
+  :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+  margin: 0 1.5rem 0 0 !important;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-store-link-0-x-buttonLink) {
+  border: none;
+
+  background-color: #ff3333;
+}
+
+.actionsContentWrapper--quickview
+  :global(.vtex-store-link-0-x-buttonLink):hover {
+  opacity: 0.7;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-store-link-0-x-label) {
+  font-size: 0;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-store-link-0-x-label)::before {
+  content: 'Ver detalhes';
+
+  font-size: 1rem;
+  text-transform: none;
+
+  color: #fff;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-button) {
+  border: none;
+
+  background-color: #3dba00;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-button):hover {
+  opacity: 0.7;
+}
+
+.actionsContentWrapper--quickview :global(.vtex-button__label) {
+  text-transform: capitalize;
+
+  color: #fff;
+}
+
+.actionsContentWrapper--quickview
+  :global(.vtex-flex-layout-0-x-flexRowContent--addToCartRow) {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.actionsContentWrapper--quickview
+  :global(.vtex-flex-layout-0-x-flexRowContent--addToCartRow)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  padding: 0;
+}
+
+.contentContainer--quickviewContent {
+  height: fit-content;
+  padding: 0 0 0 1rem;
+  overflow: hidden;
+}
+
+.contentContainer--quickviewContent
+  :global(.vtex-store-components-3-x-productNameContainer--quickview) {
+  margin-top: 0;
+}
+
+.contentContainer--quickviewContent
+  :global(.vtex-flex-layout-0-x-flexColChild):first-child {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .paper--quickview {
+    height: 260px;
+    width: 580px;
+  }
+
+  .actionsContainer--quickview {
+    padding: 1rem 2rem 0 1rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .paper--quickview {
+    height: 450px;
+    width: 900px;
+  }
+}
+
+@media (min-width: 75em) {
+  .paper--quickview {
+    width: calc(100% - 4rem);
+    height: auto;
+  }
+}
+
+@media (min-width: 82em) {
+  .actionsContainer--quickview {
+    padding: 0rem 2.5rem 2.5rem 0rem;
+  }
+}

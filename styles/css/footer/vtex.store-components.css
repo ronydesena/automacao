@@ -1,0 +1,29 @@
+.imageElement--development-image {
+  height: 34px;
+}
+
+.logoContainer--logo-desktopWhite {
+  padding: 0;
+}
+
+.imageElement--payment-methods-icon,
+.imageElement--security-badges-icon {
+  margin: 0 0.3rem 0.3rem 0;
+  width: 50px;
+}
+
+.imageElement--social-icons-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media (min-width: 1026px) {
+  .imageElement--development-image {
+    height: initial;
+  }
+
+  .imageElement--payment-methods-icon,
+  .imageElement--security-badges-icon {
+    margin: 0;
+  }
+}

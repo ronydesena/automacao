@@ -1,0 +1,20 @@
+.product-identifier--productReference {
+  width: fit-content !important;
+
+  margin: 0 0 0 auto;
+
+  font-size: 0.875rem;
+
+  color: #787a7f;
+}
+
+.product-identifier--productReference .product-identifier__label {
+  font-size: 0;
+}
+
+.product-identifier--productReference .product-identifier__label::before {
+  content: 'Ref';
+
+  font-size: 0.875rem;
+  line-height: 1rem;
+}

@@ -1,0 +1,105 @@
+.tipBarWrapper {
+  display: flex;
+
+  justify-content: center;
+
+  height: 2rem;
+  width: 100%;
+
+  padding: 0 0.5rem;
+
+  background-color: #48494c;
+}
+
+.tipBarContainer {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+
+  gap: 1rem;
+}
+
+.itemsContainer {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  max-width: 74.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.tipBarLeftArrow {
+  height: 0.625rem;
+  width: 0.625rem;
+
+  transform: rotate(180deg);
+}
+
+.tipBarContent {
+  display: flex;
+
+  align-items: center;
+
+  height: 100%;
+  width: fit-content;
+
+  gap: 1rem;
+}
+
+.tipBarSpacer {
+  flex-grow: 1;
+}
+
+.tipBarImage {
+  height: 1.125rem;
+  width: 1.125rem;
+
+  object-fit: contain;
+}
+
+.tipBarText {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #fff;
+
+  transition: all 0.3s ease;
+}
+
+.tipBarRightArrow {
+  height: 0.625rem;
+  width: 0.625rem;
+}
+
+.buttonNav {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  border: none;
+  padding-bottom: 0 0.5rem;
+
+  background-color: transparent;
+}
+
+.buttonNav:disabled {
+  opacity: 0.5;
+}
+
+.buttonNav:not(:disabled):hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1026px) {
+  .itemsContainer {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "flex-layout.row#product-main-mobile": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "product-main-container"
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-mobile",
+      "back-button#product-page-mobile"
+    ]
+  },
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.col#right-col-mobile": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "productRow"
+    },
+    "children": ["custom-buy-box"]
+  },
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images", "flex-layout.row#highlights-container"],
+    "props": {
+      "blockClass": "product-images-container"
+    }
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true,
+      "blockClass": "product-images"
+    }
+  },
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+  "flex-layout.row#buy-box-mobile": {
+    "props": {
+      "blockClass": "buy-box-mobile"
+    },
+    "children": [
+      "flex-layout.row#product-data",
+      "product-separator",
+      "flex-layout.row#selling-price-and-quantity",
+      "flex-layout.row#buy-button",
+      "product-separator",
+      "sku-selector",
+      "assembly-modal-trigger",
+      "product-gifts",
+      "availability-subscriber",
+      "shipping-custom"
+    ]
+  },
+  "flex-layout.row#product-data": {
+    "children": ["product-brand", "product-identifier.product"],
+    "props": {
+      "blockClass": "product-data"
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 2,
+      "marginBottom": 4,
+      "blockClass": "add-to-cart-button-wrapper"
+    },
+    "children": ["add-to-cart-button-wrapper"]
+  },
+  "assembly-modal-trigger": {
+    "props": {
+      "Triggers": "flex-layout.row#assembly-modal-trigger"
+    }
+  }
+}

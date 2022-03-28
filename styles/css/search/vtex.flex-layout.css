@@ -1,0 +1,14 @@
+.flexRow--orderByAndSwitcher {
+  margin: 0.875rem 0;
+  padding: 0;
+}
+
+.flexColChild--orderByMobileCol {
+  height: fit-content !important;
+}
+
+.flexCol--orderByMobileCol {
+  justify-content: center;
+
+  width: auto !important;
+}

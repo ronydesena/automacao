@@ -1,0 +1,35 @@
+.backButton {
+  display: flex;
+
+  align-items: center;
+
+  height: fit-content !important;
+  width: fit-content !important;
+
+  border: none;
+  gap: 0.5rem;
+  padding: 0.5rem;
+
+  background-color: transparent;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+
+.backButton svg {
+  height: 0.625rem;
+  width: 0.625rem;
+
+  transform: rotate(180deg);
+}
+
+.backButton p {
+  margin: 0;
+
+  font-family: 'Raleway';
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+
+  color: #48494c;
+}

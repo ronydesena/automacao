@@ -1,0 +1,36 @@
+{
+  "product-summary.shelf#be-interested": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button#default"
+    ]
+  },
+  "list-context.product-list#be-interested": {
+    "blocks": ["product-summary.shelf#be-interested"],
+    "children": ["slider-layout#default-shelf"]
+  },
+  "rich-text#be-interested": {
+    "props": {
+      "blockClass": "shelf-title",
+      "text": "Você pode se interessar"
+    }
+  },
+  "flex-layout.col#container-be-interested": {
+    "children": [
+      "rich-text#be-interested",
+      "list-context.product-list#best-sellers"
+    ],
+    "props": {
+      "blockClass": "container-be-interested"
+    }
+  },
+  "flex-layout.row#container-be-interested": {
+    "children": ["flex-layout.col#container-be-interested"],
+    "props": {
+      "blockClass": "container-be-interested"
+    }
+  }
+}

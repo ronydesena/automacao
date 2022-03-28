@@ -1,0 +1,96 @@
+.pickupModalContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: fit-content;
+  width: 100%;
+}
+
+.pickupModalContainer hr {
+  margin: 1rem 0 1.5rem 0;
+
+  opacity: 0.3;
+}
+
+.pickupModalContainer button {
+  position: absolute;
+  top: -38px;
+  right: -17px;
+
+  height: 2.25rem;
+  width: 2.75rem;
+
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  transform: translateY(50%);
+}
+
+.pickupModalContainer button span {
+  font-size: 0;
+
+  padding: 0;
+}
+
+.pickupModalContainer button span::before {
+  content: '';
+  display: inline-block;
+  background-image: url('data:image/svg+xml,%3Csvg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect x="10.6066" y="12.7279" width="1" height="33" rx="1" transform="rotate(-45 10.6066 12.7279)" fill="%2348494C"/%3E%3Crect x="12.7279" y="36.0624" width="1" height="33" rx="1" transform="rotate(-135 12.7279 36.0624)" fill="%2348494C"/%3E%3C/svg%3E') !important;
+  background-repeat: no-repeat;
+  background-size: 2.25rem 2.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.pickupModalTitle {
+  margin: 0 0 0.5rem 0;
+
+  font-size: 1.375rem;
+
+  color: #ff3333;
+}
+
+.pickupPointsAddress {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #48494c;
+}
+
+.shippingInfoItems {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 30rem;
+  height: fit-content;
+  width: 100%;
+
+  gap: 1rem;
+  padding: 0 1rem 1rem 0;
+
+  overflow-y: auto;
+}
+
+.shippingInfoItems::-webkit-scrollbar {
+  width: 5px;
+}
+
+.shippingInfoItems::-webkit-scrollbar-track {
+  border-radius: 10px;
+
+  background: #e5e9f2;
+}
+
+.shippingInfoItems::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: #ff3333;
+}
+
+.shippingInfoItems::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.9);
+}

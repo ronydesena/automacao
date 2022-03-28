@@ -1,0 +1,78 @@
+{
+  "layover-cupom": {
+    "component": "LayoverCupom"
+  },
+  "description-scroller": {
+    "component": "DescriptionScroller"
+  },
+  "menu-header": {
+    "component": "MenuHeader"
+  },
+  "menu-footer": {
+    "component": "MenuFooter"
+  },
+  "shipping-custom-provider": {
+    "component": "ShippingCustomProvider"
+  },
+  "shipping-custom": {
+    "component": "ShippingCustom",
+    "around": ["shipping-custom-provider"]
+  },
+  "varieties-slider": {
+    "component": "VarietiesSlider"
+  },
+  "contact-us": {
+    "component": "ContactUs"
+  },
+  "shipping-modal-trigger": {
+    "component": "PickupPointsTrigger"
+  },
+  "pickup-points-modal": {
+    "component": "PickupPointsModal"
+  },
+  "add-to-cart-button-wrapper": {
+    "component": "AddToCartButtonWrapper"
+  },
+  "product-brand": {
+    "component": "ProductBrand"
+  },
+  "assembly-options-modal": {
+    "component": "AssemblyOptionsModal"
+  },
+  "back-button": {
+    "component": "BackButton"
+  },
+  "assembly-modal-trigger": {
+    "component": "AssemblyOptionsTrigger"
+  },
+  "assembly-info-modal": {
+    "component": "AssemblyInfoModal"
+  },
+  "tip-bar": {
+    "component": "TipBar"
+  },
+  "regions-desktop-trigger": {
+    "component": "RegionsDesktopTrigger"
+  },
+  "my-orders": {
+    "component": "MyOrders"
+  },
+  "custom-vertical-timeline": {
+    "component": "CustomVerticalTimeline"
+  },
+  "custom-breadcrumb": {
+    "component": "CustomBreadcrumb"
+  },
+  "my-account-back-button": {
+    "component": "MyAccountBackButton"
+  },
+  "filter-navigator-close-button": {
+    "component": "FilterNavigatorCloseButton"
+  },
+  "mega-menu-icon-toggler": {
+    "component": "MegaMenuIconToggler"
+  },
+  "store-global-configs": {
+    "component": "StoreGlobalConfigs"
+  }
+}

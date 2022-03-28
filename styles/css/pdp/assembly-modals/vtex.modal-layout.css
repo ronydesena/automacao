@@ -1,0 +1,45 @@
+.triggerContainer--modal-assembly-options {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 2.5rem;
+
+  border-radius: 0.25rem;
+
+  background-color: #48494c;
+}
+
+.triggerContainer--modal-assembly-options:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.paper--modal-assembly-options {
+  max-width: 25rem;
+  width: 90vw;
+
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.paper--modal-assembly-info {
+  max-width: 25rem;
+  width: 90vw;
+
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .triggerContainer--modal-assembly-options {
+    max-width: 35.875rem;
+  }
+}
+
+@media (min-width: 1026px) {
+  .triggerContainer--modal-assembly-options {
+    max-width: none;
+  }
+}

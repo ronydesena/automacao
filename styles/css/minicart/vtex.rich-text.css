@@ -1,0 +1,15 @@
+.paragraph--minicart-icon-label {
+  display: none;
+}
+
+@media (min-width: 1026px) {
+  .paragraph--minicart-icon-label {
+    display: block;
+
+    margin: 0;
+
+    font-size: 0.75rem;
+
+    color: #48494c;
+  }
+}

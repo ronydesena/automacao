@@ -1,0 +1,11 @@
+{
+  "back-button#product-page-mobile": {
+    "props": {
+      "label": "Voltar",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#related": {
+    "title": "Related - Container",
+    "props": {
+      "marginTop": 0,
+      "marginBottom": 9,
+      "paddingTop": 0,
+      "paddingBottom": 0,
+      "preventVerticalStretch": true,
+      "blockClass": "shelfRelatedContainer"
+    },
+    "children": ["shelf.relatedProducts#ViewAndBought"]
+  },
+
+  "shelf.relatedProducts#ViewAndBought": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "marginTop": 10,
+      "recommendation": "viewAndBought",
+      "productList": {
+        "arrows": true,
+        "titleText": "Quem viu, viu também",
+        "showTitle": true,
+        "scroll": "BY_PAGE",
+        "maxItems": 20,
+        "infinite": false,
+        "minItemsPerPage": 2,
+        "itemsPerPage": 5,
+        "gap": "ph5"
+      },
+      "blockClass": "shelfRelatedContainer"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "list-context.image-list#promotions-slider": {
+    "children": ["slider-layout#promotions-slider"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "mobile"
+        }
+      ]
+    }
+  },
+  "slider-layout#promotions-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "promotions-slider",
+      "showPaginationDots": "never",
+      "navigationStep": "page",
+      "infinite": false,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 10
+    }
+  },
+  "rich-text#promotions-slider": {
+    "props": {
+      "blockClass": "slider-title",
+      "text": "Promoções imperdíveis"
+    }
+  },
+  "flex-layout.col#promotions-slider": {
+    "children": [
+      "rich-text#promotions-slider",
+      "list-context.image-list#promotions-slider"
+    ],
+    "props": {
+      "blockClass": "promotions-slider"
+    }
+  }
+}

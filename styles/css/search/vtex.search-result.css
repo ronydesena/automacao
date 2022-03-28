@@ -1,0 +1,464 @@
+.sidebar {
+  left: 0;
+  right: initial;
+}
+
+.filterAccordionBreadcrumbs {
+  position: relative;
+
+  height: 2.875rem;
+
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+
+  background: #ff3333;
+  color: #ffff;
+}
+
+.filterBreadcrumbsText {
+  display: flex;
+
+  margin-left: 1rem;
+
+  font-size: 1.125rem;
+
+  color: #ffffff;
+}
+
+.filterBreadcrumbsText::after {
+  content: '/';
+
+  display: block;
+
+  margin-left: 0.5ch;
+}
+
+.filterBreadcrumbsContent {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 0 0 1.25rem;
+  transform: translateY(-50%);
+}
+
+.filterBreadcrumbsItem {
+  gap: 4.5rem;
+
+  z-index: -1;
+}
+
+.filterBreadcrumbsItem .caretIcon {
+  height: 1rem;
+
+  filter: brightness(0) invert(1);
+  transform: rotate(180deg);
+}
+
+.filterBreadcrumbsItemName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  max-width: 13ch;
+
+  font-size: 1.125rem;
+  word-break: break-all;
+  -webkit-line-clamp: 1;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.accordionFilterContainer {
+  padding-left: 1rem;
+}
+
+.accordionFilterItemTitle {
+  font-size: 1rem;
+}
+
+.accordionFilterItemTag {
+  margin-left: 0.875rem;
+}
+
+.filterAccordionItemBox {
+  min-height: 0;
+
+  border: none;
+  padding: 0.375rem 1rem 0.375rem 0;
+}
+
+.sidebar .accordionFilter {
+  overflow: auto;
+}
+
+.accordionFilterItemOptions {
+  height: auto;
+
+  padding-bottom: 0;
+}
+
+.accordionFilterItemTag :global(.vtex-tag) {
+  padding: 0.125rem 0.8125rem;
+
+  font-size: 1rem;
+
+  background-color: #e5e9f2;
+  color: #48494c;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__label) {
+  font-size: 0.875rem;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__container) {
+  min-width: 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
+
+  margin: 0;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__inner-container) {
+  height: 1.25rem;
+  width: 1.25rem;
+
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__box-wrapper) {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__input) {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.filterAccordionItemBox :global(.vtex-checkbox__line-container) {
+  align-items: center;
+
+  gap: 0.625rem;
+}
+
+:global(.vtex-search-result-3-x-caretIcon) {
+  color: #ff3333;
+  transform: rotate(-90deg);
+}
+
+.filterApplyButtonWrapper :global(.vtex-button) {
+  background: #ff3333;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.filterClearButtonWrapper :global(.vtex-button) {
+  background: #e5e9f2;
+  text-transform: capitalize;
+}
+
+.filterClearButtonWrapper :global(.vtex-button__label) {
+  padding: 0;
+
+  font-size: 0;
+}
+
+.filterClearButtonWrapper :global(.vtex-button__label)::before {
+  content: 'Limpar filtros';
+
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button__label) {
+  font-size: 0.875rem;
+}
+
+.searchResultContainer {
+  max-width: none;
+
+  margin: 0;
+}
+
+.buttonShowMore :global(.vtex-button) {
+  display: flex;
+  border: none;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  background: red;
+}
+
+.buttonShowMore :global(.vtex-button):hover {
+  border: none;
+
+  opacity: 0.7;
+}
+
+.buttonShowMore :global(.vtex-button__label) {
+  font-size: 0;
+
+  color: #ffffff;
+}
+
+.buttonShowMore :global(.vtex-button__label)::before {
+  content: '';
+  display: inline-block;
+
+  height: 1rem;
+  width: 1rem;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 26.975 26.158' data-ember-extension='1'%3E%3Cg id='Grupo_589' data-name='Grupo 589' transform='translate(-199.206 -710.75)'%3E%3Cpath id='Caminho_118' data-name='Caminho 118' d='M200.176,729.334a13.148,13.148,0,0,0,1.607,3.864,1.087,1.087,0,0,0,1.69.188h0a1.067,1.067,0,0,0,.166-1.311,11,11,0,0,1-1.355-3.269,1.065,1.065,0,0,0-1.044-.805h0A1.089,1.089,0,0,0,200.176,729.334Z' transform='translate(-0.123 -2.262)' fill='%23FFFFFF'/%3E%3Cpath id='Caminho_119' data-name='Caminho 119' d='M206.941,738.668a13.15,13.15,0,0,0,3.864,1.607,1.089,1.089,0,0,0,1.334-1.061v0a1.065,1.065,0,0,0-.805-1.044,11,11,0,0,1-3.269-1.355,1.067,1.067,0,0,0-1.311.166h0A1.087,1.087,0,0,0,206.941,738.668Z' transform='translate(-0.948 -3.396)' fill='%23FFFFFF'/%3E%3Cpath id='Caminho_120' data-name='Caminho 120' d='M218.784,712.019a13.407,13.407,0,0,0-15.535,2.96L201,713.467a1.06,1.06,0,0,0-1.653.857l-.143,6.738a1.061,1.061,0,0,0,1.48,1l6.19-2.666a1.061,1.061,0,0,0,.173-1.854l-1.973-1.329a11.068,11.068,0,1,1,10.4,18.56,1.067,1.067,0,0,0-.809,1.044v0A1.089,1.089,0,0,0,216,736.878a13.346,13.346,0,0,0,8.969-18.6A12,12,0,0,0,218.784,712.019Z' fill='%23FFFFFF'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  color: #fff;
+}
+
+.buttonShowMore :global(.vtex-button__label)::after {
+  content: 'Carregar mais';
+
+  margin-left: 1ch;
+
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.galleryLayoutOptionButton--selected {
+  display: none;
+}
+
+.searchResultContainer {
+  padding: 0;
+}
+
+.totalProductsMessage--headerSearch {
+  color: #787a7f;
+  text-transform: capitalize;
+}
+
+.galleryTitle--layout {
+  font-size: 1.375rem;
+  margin: 0.25rem 0 0 0;
+  line-height: 1.75;
+}
+
+.filterPopupTitle--orderBy {
+  display: none;
+}
+
+.orderByOptionsContainer {
+  right: 0;
+}
+
+.caretIcon--orderBy {
+  color: transparent;
+  display: none;
+}
+
+.filterPopupArrowIcon--orderBy {
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+
+.filterPopupArrowIcon--orderBy::before {
+  content: 'Ordenar';
+  color: #48494c;
+  display: flex !important;
+  align-items: center;
+  margin-right: 0.3rem;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.filterPopupArrowIcon--orderBy::after {
+  content: '';
+  color: red;
+  padding-left: 20px;
+  display: flex !important;
+  top: 0;
+  right: 0;
+  /* margin-left: .1rem; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 31.042 29.169'%3E%3Cg id='Grupo_184' data-name='Grupo 184' transform='translate(-104.669 -664.71)'%3E%3Cpath id='Caminho_109' data-name='Caminho 109' d='M135.673,673.734l-3.832-8.2a1.322,1.322,0,0,0-.562-.622,1.538,1.538,0,0,0-1.52,0,1.32,1.32,0,0,0-.56.616l-3.82,8.209a1.276,1.276,0,0,0-.124.541,1.114,1.114,0,0,0,.417.872,1.3,1.3,0,0,0,1.515.142,1.216,1.216,0,0,0,.473-.561l.716-1.6h4.311l.716,1.6a1.2,1.2,0,0,0,.477.564,1.231,1.231,0,0,0,.637.178,1.293,1.293,0,0,0,.871-.327,1.116,1.116,0,0,0,.405-.867A1.3,1.3,0,0,0,135.673,673.734Zm-3.979-2.85h-2.322l1.161-2.613Z' transform='translate(-0.085 0)' fill='%23ff3333'/%3E%3Cpath id='Caminho_110' data-name='Caminho 110' d='M133.477,691.666h-3.686l4.464-6.258a1.5,1.5,0,0,0,.32-.893,1.168,1.168,0,0,0-.344-.841,1.216,1.216,0,0,0-.878-.34h-5.716a1.151,1.151,0,1,0,0,2.292h3.492l-4.464,6.246a1.5,1.5,0,0,0-.3.891,1.176,1.176,0,0,0,.341.852,1.214,1.214,0,0,0,.881.342h5.9a1.151,1.151,0,1,0,0-2.291Z' transform='translate(-0.089 -0.077)' fill='%23ff3333'/%3E%3Cpath id='Caminho_111' data-name='Caminho 111' d='M112.832,667.724l-3.169-2.745a1.1,1.1,0,0,0-1.443,0l-3.169,2.745a1.1,1.1,0,0,0,.721,1.934h2.016v23.069a1.154,1.154,0,0,0,2.307,0V669.657h2.016A1.1,1.1,0,0,0,112.832,667.724Z' transform='translate(0)' fill='%23ff3333'/%3E%3Cpath id='Caminho_112' data-name='Caminho 112' d='M115.042,690.866l3.169,2.745a1.1,1.1,0,0,0,1.442,0l3.17-2.745a1.1,1.1,0,0,0-.721-1.934h-2.017V665.863a1.153,1.153,0,0,0-2.306,0v23.069h-2.016A1.1,1.1,0,0,0,115.042,690.866Z' transform='translate(-0.041 0)' fill='%23ff3333'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.orderByButton--orderBy {
+  padding: 0;
+}
+
+.filterPopupTitle {
+  text-transform: capitalize;
+  color: #787a7f;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.galleryItem--grid :global(.vtex-product-summary-2-x-brandName) {
+  font-size: 0.875rem;
+}
+
+.galleryLayoutOptionButton {
+  background: transparent;
+}
+.galleryLayoutOptionButton::before {
+  content: 'Organizar';
+  padding-right: 0.3rem;
+  color: #787a7f;
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.filterIcon {
+  display: none !important;
+}
+
+.filterTitle {
+  text-transform: capitalize;
+  color: #787a7f;
+  font-weight: 600;
+}
+
+.galleryItem {
+  border: none;
+}
+
+.orderByDropdown--orderBy {
+  padding: 0;
+}
+
+.filter__container {
+  border: none;
+}
+
+.filter__container--title .filterMessage {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #48494c;
+}
+
+.filter__container--title .filterMessage::before {
+  content: '';
+  display: inline-block;
+
+  height: 0.9rem;
+  width: 0.9rem;
+
+  margin-right: 0.5ch;
+
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="26.599" height="29.169" fill="%23ff3333" viewBox="0 0 26.599 29.169"%3E%3Cg transform="translate(-155 -612.125)"%3E%3Cpath class="a" d="M170.614,641.294a3.04,3.04,0,0,1-1.642-.481l-4.627-2.959a3.032,3.032,0,0,1-1.4-2.566v-7.051a.426.426,0,0,0-.153-.33l-6.7-5.639a3.042,3.042,0,0,1-1.085-2.33v-4.768a3.05,3.05,0,0,1,3.046-3.046h20.507a3.05,3.05,0,0,1,3.046,3.046v4.768a3.042,3.042,0,0,1-1.085,2.33l-6.7,5.639a.426.426,0,0,0-.154.33v10.01a3.043,3.043,0,0,1-3.045,3.046Zm-12.568-26.553a.431.431,0,0,0-.43.43v4.768a.429.429,0,0,0,.154.329l6.7,5.639a3.041,3.041,0,0,1,1.085,2.331v7.051a.429.429,0,0,0,.2.362l4.628,2.959a.429.429,0,0,0,.661-.362v-10.01a3.041,3.041,0,0,1,1.085-2.331l6.7-5.639a.429.429,0,0,0,.153-.329v-4.768a.431.431,0,0,0-.43-.43Z"/%3E%3C/g%3E%3C/svg%3E') !important;
+  background-repeat: no-repeat;
+  background-size: 0.9rem 0.9rem;
+}
+
+.filter__container :global(.vtex-checkbox__label) {
+  font-size: 0.875rem;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.filterTemplateOverflow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-track {
+  background: #e5e9f2;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-thumb {
+  background-color: #ff3333;
+  max-height: 5px !important;
+}
+
+.filter__container--priceRange {
+  display: none;
+}
+
+.filterItem :global(.vtex-checkbox__line-container) {
+  align-items: center;
+}
+
+.filterItem :global(.vtex-checkbox__inner-container) {
+  border-width: 1px;
+}
+
+.filters--layout .filterPopupButton .filterPopupTitle {
+  display: flex;
+  margin-left: 2rem;
+  font-size: 0;
+}
+
+.filters--layout .filterPopupButton .filterPopupTitle::before {
+  content: '';
+  display: inline-block;
+
+  height: 0.9rem;
+  width: 0.9rem;
+
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="26.599" height="29.169" fill="%23ff3333" viewBox="0 0 26.599 29.169"%3E%3Cg transform="translate(-155 -612.125)"%3E%3Cpath class="a" d="M170.614,641.294a3.04,3.04,0,0,1-1.642-.481l-4.627-2.959a3.032,3.032,0,0,1-1.4-2.566v-7.051a.426.426,0,0,0-.153-.33l-6.7-5.639a3.042,3.042,0,0,1-1.085-2.33v-4.768a3.05,3.05,0,0,1,3.046-3.046h20.507a3.05,3.05,0,0,1,3.046,3.046v4.768a3.042,3.042,0,0,1-1.085,2.33l-6.7,5.639a.426.426,0,0,0-.154.33v10.01a3.043,3.043,0,0,1-3.045,3.046Zm-12.568-26.553a.431.431,0,0,0-.43.43v4.768a.429.429,0,0,0,.154.329l6.7,5.639a3.041,3.041,0,0,1,1.085,2.331v7.051a.429.429,0,0,0,.2.362l4.628,2.959a.429.429,0,0,0,.661-.362v-10.01a3.041,3.041,0,0,1,1.085-2.331l6.7-5.639a.429.429,0,0,0,.153-.329v-4.768a.431.431,0,0,0-.43-.43Z"/%3E%3C/g%3E%3C/svg%3E') !important;
+  background-repeat: no-repeat;
+  background-size: 0.9rem 0.9rem;
+}
+
+.filters--layout .filterPopupButton .filterPopupTitle::after {
+  content: 'Filtros';
+  margin-left: 0.5ch;
+  font-size: 0.875rem;
+}
+
+.gallery {
+  padding: 1rem 0 2rem 0;
+}
+
+.filterTemplateOverflow {
+  scrollbar-width: thin;
+  scrollbar-color: #ff3333 #e5e9f2;
+}
+
+@media (min-width: 1026px) {
+  .filterIcon {
+    display: none !important;
+  }
+  .orderByOptionsContainer {
+    top: 45px !important;
+  }
+
+  .orderByButton {
+    border: none;
+  }
+
+  .galleryTitle--layout {
+    margin: 0 1.55rem 0 0;
+  }
+
+  .orderBy--layout {
+    display: flex;
+    align-items: center;
+  }
+
+  .filter__container--title {
+    height: 3.525rem;
+
+    border-bottom: 1px solid #e5e9f2;
+  }
+
+  .filter__container--title .filterMessage {
+    margin: 0;
+    padding-top: 1.25rem;
+  }
+
+  .galleryItem--grid :global(.vtex-product-summary-2-x-brandName) {
+    font-size: 1rem;
+  }
+
+  .galleryItem--grid :global(.vtex-product-price-1-x-listPrice) {
+    margin-bottom: 0;
+  }
+}

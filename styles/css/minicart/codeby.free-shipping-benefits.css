@@ -1,0 +1,55 @@
+.barContainer {
+  height: 6px !important;
+}
+
+.currencyContainer {
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+}
+
+.freigthScaleContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 3.675rem;
+  width: 90%;
+
+  margin: 1rem auto;
+
+  color: #787a7f;
+}
+
+.sliderContainer {
+  height: 6px !important;
+
+  margin: 0;
+}
+
+.sliderTextProgress {
+  margin: 0;
+}
+
+.textProgress0 {
+  margin: auto 0;
+}
+
+.textProgress0 :global(.vtex-render-runtime-8-x-lazyload) {
+  max-height: 1rem;
+
+  margin: auto 0;
+
+  filter: invert(46%) sepia(70%) saturate(6817%) hue-rotate(343deg)
+    brightness(103%) contrast(105%);
+}
+
+.textProgressShipping {
+  margin: 0 2rem;
+
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  text-align: center;
+
+  color: #787a7f;
+}

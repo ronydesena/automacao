@@ -1,0 +1,108 @@
+.contactUs {
+  padding: 0 1rem;
+}
+
+.headerContactUs {
+  position: relative;
+}
+
+.headerContactUs__title {
+  color: #ff3333;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #c1c4cc;
+  padding-bottom: 0.8rem;
+}
+
+.headerContactUs__subTitle {
+  font-size: 1rem;
+  color: #48494c;
+  margin: 0 auto;
+}
+
+.headerContactUs__description {
+  font-size: 1rem;
+}
+
+.contatctUsForm__inputGroup {
+  max-width: 100vw;
+  margin: 0.3rem 0 !important;
+}
+.contactUsForm__inputText,
+.contactUsForm__inputTextarea,
+.contactUsForm__inputSelect {
+  border: 1px solid #c1c4cc;
+  display: block;
+  height: 2.375rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.3rem 0.5rem;
+  margin: 0.6rem 0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.contactUsForm__inputSelect {
+  padding-left: 0.2rem;
+}
+
+.contactUsForm__inputSelectOption {
+  color: #000;
+}
+
+.contactUsForm__inputTextarea {
+  height: 100px;
+  max-width: 600px;
+
+  resize: none;
+}
+
+.contactUsForm__inputText::placeholder {
+  color: #787a7f;
+}
+.contactUsForm__inputTextarea::placeholder {
+  display: flex;
+  justify-content: flex-start;
+  color: #787a7f;
+}
+
+.contactUsForm__inputSubmit {
+  background: #ff3333;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.informationMessage--success {
+  color: #2dcf2d;
+}
+
+.informationMessage--error {
+  color: #ff3333;
+}
+
+@media (min-width: 640px) {
+  .headerContactUs > button {
+    display: none;
+  }
+}
+
+@media (min-width: 1026px) {
+  .contactUs {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .contactUsForm__inputText,
+  .contactUsForm__inputTextarea,
+  .contactUsForm__inputSelect {
+    max-width: 600px;
+  }
+
+  .headerContactUs__description {
+    max-width: 800px;
+  }
+}

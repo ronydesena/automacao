@@ -1,0 +1,23 @@
+{
+  "responsive-layout.desktop#product-page": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability-desktop",
+      "flex-layout.row#related",
+      "flex-layout.row#description",
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table"
+    ]
+  },
+  "condition-layout.product#availability-desktop": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main-desktop",
+      "Else": "flex-layout.row#product-availability-desktop"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.flexRow--productSpecificationGroup:not(:first-child) {
+  margin: 1.5rem auto 3.5rem auto;
+}
+
+.flexRow--productSpecificationGroupName {
+  background-color: #eaeaea;
+  padding: 0.5rem 1rem;
+}
+
+.flexCol--productSpecificationName {
+  padding: 1rem;
+}
+
+.flexCol--productSpecificationValue {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.flexRow--productSpecification:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@media (min-width: 1026px) {
+  .flexRow--productSpecificationGroup {
+    max-width: 75rem;
+
+    margin: 0 auto;
+  }
+
+  .flexRow--productSpecificationGroup:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  .flexRow--productSpecificationGroup:not(:first-child)
+    :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+
+  .flexRow--specifications-title-container
+    :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+}

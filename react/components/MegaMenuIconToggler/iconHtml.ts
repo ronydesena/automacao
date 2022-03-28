@@ -1,0 +1,2 @@
+export const ICON_HTML =
+  '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="vtex-mega-menu-2-x-triggerButtonCloseIcon" style="height: 1.375rem;width: 1.375rem;display: none;" fill="none" stroke="#48494C" stroke-width="2" stroke-linecap="round" viewBox="0 0 26.9 26.9" style="enable-background:new 0 0 26.9 26.9;"><g transform="translate(1.414 1.414)"><path class="st0" d="M0,0l24.1,24.1"/><path class="st0" d="M0,24.1L24.1,0"/></g></svg>'

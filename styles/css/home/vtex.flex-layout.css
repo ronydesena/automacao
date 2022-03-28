@@ -1,0 +1,58 @@
+.flexRowContent--container-price {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.flexRow--containerInputs {
+  width: 100%;
+}
+
+.flexRowContent--containerInputs {
+  flex-direction: column;
+}
+
+.flexRow--containerInputs .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexCol--best-sellers,
+.flexCol--highlights-slider,
+.flexCol--container-offers,
+.flexCol--promotions-slider,
+.flexCol--container-be-interested,
+.flexCol--special-combos,
+.flexCol--recently-seen,
+.flexCol--skin-care,
+.flexCol--latests {
+  max-width: 75rem;
+}
+
+.flexColChild--best-sellers :global(.vtex-rich-text-0-x-paragraph--shelf-title),
+.flexColChild--container-offers
+  :global(.vtex-rich-text-0-x-paragraph--shelf-title),
+.flexColChild--container-be-interested
+  :global(.vtex-rich-text-0-x-paragraph--shelf-title),
+.flexColChild--recently-seen
+  :global(.vtex-rich-text-0-x-paragraph--shelf-title),
+.flexColChild--latests :global(.vtex-rich-text-0-x-paragraph--shelf-title) {
+  margin: 2rem 0 0.75rem 0.5rem !important;
+}
+
+.flexCol--latests {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1026px) {
+  .flexRow--containerInputs {
+    max-width: calc(75rem - 2rem);
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .flexRowContent--containerInputs {
+    align-items: center;
+    flex-direction: row;
+  }
+  .flexRow--containerInputs .stretchChildrenWidth {
+    margin: 0 0.8rem;
+  }
+}

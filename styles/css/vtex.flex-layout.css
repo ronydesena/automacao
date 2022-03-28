@@ -1,0 +1,129 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+.flexRowContent--main-header {
+  background-color: #fff !important;
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRow--main-header {
+  background-color: #fff;
+
+  box-shadow: 0px 3px 12px #0000001a;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+
+  padding: 0.625rem 0.5rem;
+}
+
+.flexRowContent--newsletterContainer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  padding: 2rem 1rem;
+
+  background-color: #e5e9f2;
+}
+
+.flexRowContent--newsletterContainer .stretchChildrenWidth {
+  max-width: 75rem;
+  width: 100% !important;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+.flexRowContent--login-title-and-back-button {
+  position: relative;
+}
+
+@media screen and (min-width: 640px) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1026px) {
+  .flexRowContent--main-header {
+    max-width: 75rem;
+    height: 4.7rem;
+
+    margin: 0 auto;
+
+    box-shadow: none !important;
+  }
+
+  .flexRow--login-title-and-back-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}

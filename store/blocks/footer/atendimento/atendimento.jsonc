@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#footer-atendimento": {
+    "children": ["flex-layout.col#atendimento"]
+  },
+  "flex-layout.col#atendimento": {
+    "children": [
+      "rich-text#title-atendimento",
+      "rich-text#telefone-1",
+      "rich-text#telefone-2",
+      "rich-text#servico-ao-cliente"
+    ],
+    "props": {
+      "blockClass": "footer-links"
+    }
+  },
+  "rich-text#title-atendimento": {
+    "props": {
+      "blockClass": "title-section-link",
+      "text": "Atendimento" ,
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#telefone-1": {
+    "props": {
+      "blockClass": "footer-text",
+      "text": "(XX) 998756-4321",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#telefone-2": {
+    "props": {
+      "blockClass": "footer-text",
+      "text": "(XX) 3456-7890",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#servico-ao-cliente": {
+    "props": {
+      "blockClass": "footer-text",
+      "text": "Serviço ao Cliente",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.shippingInfoTitle {
+  font-size: 1rem;
+
+  color: #ff3333;
+}
+
+.shippingInfoItems {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.shippingInfoNotFound {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #48494c;
+}

@@ -1,0 +1,24 @@
+.shippingLogisticItemContainer {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 0.5rem;
+}
+
+.shippingLogisticItemTitle {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #48494c;
+}
+
+.shippingLogisticItemValue {
+  margin: 0;
+
+  font-size: 0.875rem;
+  white-space: nowrap;
+
+  color: #48494c;
+}

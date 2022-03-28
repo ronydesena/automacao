@@ -1,0 +1,23 @@
+{
+  "responsive-layout.mobile#product-page": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability-mobile",
+      "flex-layout.row#related",
+      "flex-layout.row#description",
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table"
+    ]
+  },
+  "condition-layout.product#availability-mobile": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main-mobile",
+      "Else": "flex-layout.row#product-availability-mobile"
+    }
+  }
+}

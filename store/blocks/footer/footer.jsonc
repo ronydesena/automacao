@@ -1,0 +1,92 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ],
+    "props": {
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#logo-desktopWhite",
+      "flex-layout.col#social-icons"
+    ],
+    "props": {
+      "blockClass": "social-icons"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#atendimento",
+      "flex-layout.col#institucional",
+      "flex-layout.col#nossos-servicos",
+      "flex-layout.col#paymentWithSecurity"
+    ],
+    "props": {
+      "blockClass": "footer-links"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa"]
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["flex-layout.row#copyAndDevelopers"],
+    "props": {
+      "blockClass": "copyAndDevelopers"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Promofarma - Todos os direitos reservados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "footer"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-mobile": {
+    "children": ["flex-layout.row#development", "rich-text#footer-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "blockClass": "footer-links-mobile"
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "Promofarma © - Todos os direitos reservados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "footer-copy"
+    }
+  }
+}

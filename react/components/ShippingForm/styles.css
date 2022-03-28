@@ -1,0 +1,86 @@
+.shippingFormContainer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  gap: 1rem;
+}
+
+.shippingTitle {
+  margin: 0;
+
+  font-size: 1rem;
+  text-align: center;
+
+  color: #48494c;
+}
+
+.shippingDescription {
+  width: 100%;
+
+  font-size: 0.875rem;
+  text-align: center;
+
+  margin: 0 0 0.25rem 0;
+  padding: 0 1rem;
+
+  color: #48494c;
+}
+
+.shippingCepContainer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.shippingCepContainer .shippingDescription {
+  max-width: 173px;
+}
+
+.shippingCepInput {
+  height: 2rem;
+  width: 13.625rem;
+
+  font-size: 0.875rem;
+  text-align: center;
+
+  border: 1px solid #c1c4cc;
+  border-radius: 0.25rem;
+
+  color: #787a7f;
+
+  outline: none;
+}
+
+.shippingErrorMessage {
+  font-size: 0.75rem;
+
+  color: #ff3333;
+}
+
+@media (min-width: 1026px) {
+  .shippingFormContainer {
+    align-items: flex-start;
+  }
+
+  .shippingDescription {
+    padding: 0;
+
+    text-align: left;
+  }
+
+  .shippingCepContainer {
+    flex-direction: row;
+  }
+
+  .shippingCepInput {
+    width: 9rem;
+  }
+}

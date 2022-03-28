@@ -1,0 +1,8 @@
+{
+  "add-to-cart-button#default": {
+    "props": {
+      "text": "Comprar",
+      "blockClass": "defaultBuyButton"
+    }
+  }
+}

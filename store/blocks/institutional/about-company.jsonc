@@ -1,0 +1,492 @@
+{
+  "store.custom#institutional": {
+    "title": "Sobre a Promofarma",
+    "blocks": ["flex-layout.row#institutional"]
+  },
+
+  "flex-layout.row#institutional": {
+    "children": [
+      "custom-breadcrumb",
+      "flex-layout.row#header",
+      "flex-layout.col#description",
+      "flex-layout.col#topicAccordionChildren"
+    ],
+    "props": {
+      "blockClass": "content-service-client"
+    }
+  },
+
+  "flex-layout.row#header": {
+    "children": [
+      "rich-text#aboutCompanyTitlePage",
+      "back-button#about-company"
+    ],
+    "props": {
+      "blockClass": "headerInstitutionalPage"
+    }
+  },
+
+  "rich-text#aboutCompanyTitlePage": {
+    "title": "Titulo - Pagina",
+    "props": {
+      "text": "Serviço ao cliente",
+      "font": "t-heading-4",
+      "blockClass": "clientService"
+    }
+  },
+
+  "back-button#about-company": {
+    "props": {
+      "label": "Voltar",
+      "arrowColor": "#48494C",
+      "position": {
+        "top": 22,
+        "right": 0
+      }
+    }
+  },
+
+  "flex-layout.col#description": {
+    "children": ["rich-text#description"],
+    "props": {
+      "blockClass": "descriptionInstitutionalPage"
+    }
+  },
+
+  "rich-text#description": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus.",
+      "blockClass": "help-message"
+    }
+  },
+
+  "flex-layout.col#topicAccordionChildren": {
+    "children": ["disclosure-layout-group#groupTopic"],
+    "props": {
+      "blockClass": "topicAccordionChildren"
+    }
+  },
+
+  "disclosure-layout-group#groupTopic": {
+    "children": [
+      "flex-layout.row#firstTopic", // Perguntas frequentes
+      "flex-layout.row#secondTopic", // Políticas de envio
+      "flex-layout.row#thirdTopic", // Políticas de troca e devolução
+      "flex-layout.row#fourthTopic", // Políticas de pagamento
+      "flex-layout.row#fifthTopic", // Nossas lojas
+      "flex-layout.row#sixthTopic", // Fale Conosco
+      "flex-layout.row#seventhTopic" // Blog
+    ]
+  },
+  "flex-layout.row#firstTopic": {
+    "children": ["disclosure-layout#firstTopic"],
+    "props": {
+      "blockClass": ["firstTopic", "topic"]
+    }
+  },
+  "disclosure-layout#firstTopic": {
+    "title": "Perguntas frequentes",
+    "children": [
+      "disclosure-trigger#firstTopic",
+      "disclosure-content#firstTopic"
+    ]
+  },
+
+  "disclosure-state-indicator#right-up": {
+    "props": {
+      "Show": "icon-caret#right-about",
+      "Hide": "icon-caret#up-about"
+    }
+  },
+  "icon-caret#right-about": {
+    "props": {
+      "orientation": "right"
+    }
+  },
+  "icon-caret#up-about": {
+    "props": {
+      "orientation": "up"
+    }
+  },
+
+  "disclosure-trigger#firstTopic": {
+    "children": [
+      "flex-layout.row#group1",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group1": {
+    "children": ["image#firstTopicIcon", "rich-text#categoryTopic1"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#firstTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-typing-balloon-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#firstTopic": {
+    "children": ["flex-layout.row#answer1"]
+  },
+
+  "rich-text#categoryTopic1": {
+    "title": "Topic 1",
+    "props": {
+      "text": "Perguntas frequentes",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer1": {
+    "children": ["rich-text#answer1-about"]
+  },
+
+  "rich-text#answer1-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  },
+  "flex-layout.row#secondTopic": {
+    "children": ["disclosure-layout#secondTopic"],
+    "props": {
+      "blockClass": ["secondTopic", "topic"]
+    }
+  },
+  "disclosure-layout#secondTopic": {
+    "title": "Políticas de envio",
+    "children": [
+      "disclosure-trigger#secondTopic",
+      "disclosure-content#secondTopic"
+    ]
+  },
+
+  "disclosure-trigger#secondTopic": {
+    "children": [
+      "flex-layout.row#group2",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group2": {
+    "children": ["image#secondTopicIcon", "rich-text#categoryTopic2"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#secondTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-ambulance-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#secondTopic": {
+    "children": ["flex-layout.row#answer2"]
+  },
+
+  "rich-text#categoryTopic2": {
+    "title": "Topic 2",
+    "props": {
+      "text": "Políticas de envio",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer2": {
+    "children": ["rich-text#answer2-about"]
+  },
+
+  "rich-text#answer2-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  },
+  "flex-layout.row#thirdTopic": {
+    "children": ["disclosure-layout#thirdTopic"],
+    "props": {
+      "blockClass": ["thirdTopic", "topic"]
+    }
+  },
+  "disclosure-layout#thirdTopic": {
+    "title": "Políticas de troca e devolução",
+    "children": [
+      "disclosure-trigger#thirdTopic",
+      "disclosure-content#thirdTopic"
+    ]
+  },
+
+  "disclosure-trigger#thirdTopic": {
+    "children": [
+      "flex-layout.row#group3",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group3": {
+    "children": ["image#thirdTopicIcon", "rich-text#categoryTopic3"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#thirdTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-arrow-switch-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#thirdTopic": {
+    "children": ["flex-layout.row#answer3"]
+  },
+
+  "rich-text#categoryTopic3": {
+    "title": "Topic 3",
+    "props": {
+      "text": "Políticas de troca e devolução",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer3": {
+    "children": ["rich-text#answer3-about"]
+  },
+
+  "rich-text#answer3-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  },
+  "flex-layout.row#fourthTopic": {
+    "children": ["disclosure-layout#fourthTopic"],
+    "props": {
+      "blockClass": ["fourthTopic", "topic"]
+    }
+  },
+  "disclosure-layout#fourthTopic": {
+    "title": "Políticas de pagamento",
+    "children": [
+      "disclosure-trigger#fourthTopic",
+      "disclosure-content#fourthTopic"
+    ]
+  },
+
+  "disclosure-trigger#fourthTopic": {
+    "children": [
+      "flex-layout.row#group4",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group4": {
+    "children": ["image#fourthTopicIcon", "rich-text#categoryTopic4"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#fourthTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-credit-card-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#fourthTopic": {
+    "children": ["flex-layout.row#answer4"]
+  },
+
+  "rich-text#categoryTopic4": {
+    "title": "Topic 4",
+    "props": {
+      "text": "Políticas de pagamento",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer4": {
+    "children": ["rich-text#answer4-about"]
+  },
+
+  "rich-text#answer4-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  },
+  "flex-layout.row#fifthTopic": {
+    "children": ["disclosure-layout#fifthTopic"],
+    "props": {
+      "blockClass": ["fifthTopic", "topic"]
+    }
+  },
+  "disclosure-layout#fifthTopic": {
+    "title": "Nossas lojas",
+    "children": [
+      "disclosure-trigger#fifthTopic",
+      "disclosure-content#fifthTopic"
+    ]
+  },
+
+  "disclosure-trigger#fifthTopic": {
+    "children": [
+      "flex-layout.row#group5",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group5": {
+    "children": ["image#fifthTopicIcon", "rich-text#categoryTopic5"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#fifthTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-market-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#fifthTopic": {
+    "children": ["flex-layout.row#answer5"]
+  },
+
+  "rich-text#categoryTopic5": {
+    "title": "Topic 5",
+    "props": {
+      "text": "Nossas lojas",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer5": {
+    "children": ["rich-text#answer5-about"]
+  },
+
+  "rich-text#answer5-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  },
+  "flex-layout.row#sixthTopic": {
+    "children": ["disclosure-layout#sixthTopic"],
+    "props": {
+      "blockClass": ["sixthTopic", "topic"]
+    }
+  },
+  "disclosure-layout#sixthTopic": {
+    "title": "Fale Conosco",
+    "children": [
+      "disclosure-trigger#sixthTopic",
+      "disclosure-content#sixthTopic"
+    ]
+  },
+
+  "disclosure-trigger#sixthTopic": {
+    "children": [
+      "flex-layout.row#group6",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group6": {
+    "children": ["image#sixthTopicIcon", "rich-text#categoryTopic6"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#sixthTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-email-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#sixthTopic": {
+    "children": ["flex-layout.row#answer6"]
+  },
+
+  "rich-text#categoryTopic6": {
+    "title": "Topic 6",
+    "props": {
+      "text": "Fale Conosco",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer6": {
+    "children": ["rich-text#answer6-about"]
+  },
+
+  "rich-text#answer6-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  },
+  "flex-layout.row#seventhTopic": {
+    "children": ["disclosure-layout#seventhTopic"],
+    "props": {
+      "blockClass": ["seventhTopic", "topic"]
+    }
+  },
+  "disclosure-layout#seventhTopic": {
+    "title": "Blog",
+    "children": [
+      "disclosure-trigger#seventhTopic",
+      "disclosure-content#seventhTopic"
+    ]
+  },
+
+  "disclosure-trigger#seventhTopic": {
+    "children": [
+      "flex-layout.row#group7",
+      "disclosure-state-indicator#right-up"
+    ]
+  },
+
+  "flex-layout.row#group7": {
+    "children": ["image#seventhTopicIcon", "rich-text#categoryTopic7"],
+    "props": {
+      "blockClass": "blockItem"
+    }
+  },
+
+  "image#seventhTopicIcon": {
+    "props": {
+      "src": "assets/icons/custom-book-open-red.svg",
+      "maxHeight": 24
+    }
+  },
+
+  "disclosure-content#seventhTopic": {
+    "children": ["flex-layout.row#answer7"]
+  },
+
+  "rich-text#categoryTopic7": {
+    "title": "Topic 7",
+    "props": {
+      "text": "Blog",
+      "blockClass": "title-Topic-mobile-accordion"
+    }
+  },
+
+  "flex-layout.row#answer7": {
+    "children": ["rich-text#answer7-about"]
+  },
+
+  "rich-text#answer7-about": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, tortor sit amet accumsan rhoncus."
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "store.custom#contact-us": {
+    "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#contactContent"]
+  },
+  "flex-layout.row#contactUs": {
+    "children": [
+      "flex-layout.row#contactContent",
+      "flex-layout.row#breadcrumb"
+    ],
+    "props": {
+      "blockClass": ["contactUs"]
+    }
+  },
+  "flex-layout.row#breadcrumb": {
+    "children": ["custom-breadcrumb"],
+    "props": {
+      "blockClass": ["breadcrumb"]
+    }
+  },
+  "flex-layout.row#contactContent": {
+    "children": ["contact-us"],
+    "props": {
+      "blockClass": ["contactContent"]
+    }
+  },
+  "contact-us": {
+    "props": {
+      "BackButton": "back-button#contact-us"
+    }
+  },
+  "back-button#contact-us": {
+    "props": {
+      "label": "Voltar",
+      "arrowColor": "#48494C",
+      "position": {
+        "top": 0,
+        "right": 0
+      }
+    }
+  }
+}

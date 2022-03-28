@@ -1,0 +1,26 @@
+.triggerContainer--modal-pickup-points {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 2rem;
+  width: 14.75rem;
+
+  border-radius: 0.25rem;
+
+  background-color: #ff3333;
+}
+
+.triggerContainer--modal-pickup-points:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+}
+
+.paper--modal-pickup-points {
+  max-width: 25rem;
+  width: 90vw;
+
+  margin: 0;
+  padding: 1.5rem;
+}

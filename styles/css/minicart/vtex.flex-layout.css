@@ -1,0 +1,140 @@
+.flexCol--minicart-footer-checkout-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexColChild--minicart-footer-checkout-button {
+  display: flex;
+}
+
+.flexColChild--minicart-footer-checkout-button :global(.vtex-button) {
+  border: none;
+
+  background-color: #3dba00;
+}
+
+.flexColChild--minicart-footer-checkout-button :global(.vtex-button__label) {
+  font-size: 0;
+}
+
+.flexColChild--minicart-footer-checkout-button
+  :global(.vtex-button__label)::before {
+  content: 'Comprar';
+
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.flexColChild--minicart-footer-checkout-button
+  :global(.vtex-minicart-2-x-minicartCheckoutButton) {
+  width: 100%;
+
+  margin-top: auto;
+}
+
+.flexRow--minicart-footer {
+  height: 8.5rem;
+}
+
+.flexRow--minicart-product-price {
+  display: flex;
+}
+
+.flexRow--minicart-product-price :global(.vtex-product-list-0-x-price) {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  text-align: right;
+
+  color: #787a7f;
+}
+
+.flexRowContent--listProductsContainer
+  :global(.vtex-product-list-0-x-productImage) {
+  height: 4.75rem;
+  width: 4.75rem;
+
+  margin: auto;
+
+  object-fit: contain;
+}
+
+.flexRowContent--listProductsContainer
+  :global(.vtex-product-list-0-x-productImageContainer) {
+  display: flex;
+
+  height: 5.125rem !important;
+  width: 5.125rem !important;
+
+  border: 1px solid #e5e9f2;
+  border-radius: 4px;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+
+  box-shadow: 0px 3px 12px #0000001a;
+}
+
+.flexRowContent--listProductsContainer
+  :global(.vtex-product-list-0-x-productImageAnchor) {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 0.125rem;
+}
+
+.flexRowContent--minicart-footer {
+  height: 100%;
+}
+
+.flexRowContent--minicart-footer .stretchChildrenWidth {
+  height: 100%;
+}
+
+.flexRowContent--minicart-product-price {
+  justify-content: flex-end;
+
+  margin: auto 0;
+}
+
+.flexRowContent--price-and-quantity {
+  display: flex;
+}
+
+.flexRowContent--listProductsContainer .flexRowContent--product-description {
+  margin-top: 0 !important;
+}
+
+.flexRowContent--product-description {
+  margin-top: 2.5rem;
+}
+
+.flexRowContent--product-description
+  :global(.vtex-product-list-0-x-productBrandName) {
+  display: none;
+}
+
+.flexRowContent--product-description
+  :global(.vtex-product-list-0-x-productName) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-line-clamp: 2;
+
+  color: #787a7f;
+
+  overflow: hidden;
+}
+
+.flexRowContent--quantity-selector {
+  margin: auto 0;
+}
+
+@media (min-width: 1026px) {
+  .flexRowContent--product-description {
+    margin: 3.5rem 0 3rem 0;
+  }
+}

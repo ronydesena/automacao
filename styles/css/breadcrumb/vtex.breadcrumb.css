@@ -1,0 +1,30 @@
+.container {
+  max-width: 75rem;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.homeLink {
+  padding: 0 4px;
+}
+
+.homeLink::before {
+  content: 'Home';
+
+  font-size: 0.75rem;
+}
+
+.link {
+  font-size: 0.75rem;
+  line-height: 1.15rem;
+}
+
+.term {
+  font-size: 0.75rem;
+}
+
+.termArrow {
+  padding: 0;
+}

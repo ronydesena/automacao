@@ -1,0 +1,23 @@
+.container--assemblyInfoTriggerText {
+  display: flex;
+
+  justify-content: center;
+}
+
+.paragraph--assemblyOptionsTriggerText {
+  margin: 0;
+
+  font-size: 1rem;
+
+  color: #fff;
+}
+
+.paragraph--assemblyInfoTriggerText {
+  font-size: 0.875rem;
+
+  color: #ff3333;
+}
+
+.wrapper--assemblyInfoTriggerText:hover {
+  cursor: pointer;
+}

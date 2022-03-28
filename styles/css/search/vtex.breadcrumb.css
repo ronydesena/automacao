@@ -1,0 +1,46 @@
+.link--headerSearch,
+.arrow--headerSearch {
+  font-size: 0.75rem;
+  color: #787a7f;
+}
+
+.homeLink--headerSearch {
+  position: relative;
+  padding: 0;
+  /* display: none; */
+}
+
+.container--headerSearch {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+}
+
+.arrow--headerSearch {
+  display: flex;
+  align-items: center;
+  /* background: red; */
+  /* height: 100%; */
+}
+
+.homeLink--headerSearch::before {
+  content: 'Home';
+  display: flex;
+  font-size: 0.75rem;
+}
+
+.homeIcon--headerSearch {
+  display: none;
+}
+
+@media (min-width: 1026px) {
+  .link--headerSearch,
+  .arrow--headerSearch {
+    font-size: 0.875rem;
+  }
+
+  .homeLink--headerSearch::before {
+    font-size: 0.875rem;
+  }
+}

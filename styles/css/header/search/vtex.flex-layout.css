@@ -1,0 +1,121 @@
+.flexRowContent--savingsSummaryListDesktop {
+  justify-content: flex-start;
+}
+
+.flexCol--summaryRightListDesktop {
+  justify-content: space-around;
+}
+
+.flexRow--buyNowButton :global(.vtex-button) {
+  background: #eef3f7;
+  border-color: #eef3f7;
+  color: #0f3e99;
+}
+
+.flexRow--buyNowButton:hover :global(.vtex-button) {
+  background: #dbe9fd;
+  border-color: #dbe9fd;
+}
+
+.flexCol--productRating {
+  margin-bottom: 3rem;
+}
+
+.flexRowContent--highlights-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--highlights-container .stretchChildrenWidth {
+  width: fit-content !important;
+
+  padding: 0;
+}
+
+.flexCol--summaryDetailsListMobile {
+  justify-content: space-between;
+}
+
+.flexCol--summaryUpDetailsListMobile {
+  margin-bottom: 0.25rem;
+}
+
+.flexRowContent--headerSearch {
+  max-width: 75rem;
+
+  margin: 0 auto;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+.flexRow--headerSearch :global(.vtex-store-components-3-x-container) {
+  max-width: none;
+
+  padding: 0;
+
+  background: #e5e9f2;
+  color: #787a7f;
+}
+
+.flexRow--headerSearch :global(.vtex-search-result-3-x-totalProducts--layout) {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.25rem 0 0 0;
+  border: none;
+  text-align: right;
+  color: #787a7f;
+}
+
+.flexRowContent--headerInfo {
+  display: flex;
+}
+
+.flexColChild--summaryDetailsListMobile :global(.vtex-button) {
+  max-width: 70%;
+}
+
+.flexCol--searchMobileRight {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.flexRowContent--searchHeader {
+  display: flex;
+}
+
+@media (min-width: 1026px) {
+  .flexRow--headerSearch .stretchChildrenWidth {
+    width: initial !important;
+  }
+
+  .flexRowContent--headerSearch {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .flexRowContent--searchResult {
+    max-width: 76rem;
+
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  .flexRowContent--summaryListDesktop {
+    justify-content: left;
+  }
+
+  .flexRowContent--summaryListDesktop .stretchChildrenWidth:nth-child(even) {
+    width: 60% !important;
+  }
+
+  .flexColChild--summaryRightListDesktop .stretchChildrenWidth {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1026px) {
+  .flexRowContent--searchResult {
+    padding: 0 1rem 2rem 1rem;
+  }
+}

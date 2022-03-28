@@ -1,0 +1,134 @@
+.childrenContainer :global(.vtex__icon-caret-down) {
+  height: 0.5rem;
+
+  color: #ff3333;
+
+  transform: rotate(270deg);
+}
+
+.childrenContainer :global(.vtex__icon-caret-up) {
+  height: 0.5rem;
+
+  color: #ff3333;
+
+  transform: rotate(180deg);
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-caretIcon) {
+  height: 0.75rem;
+  width: 0.75rem;
+
+  filter: invert(46%) sepia(70%) saturate(6817%) hue-rotate(343deg)
+    brightness(103%) contrast(105%);
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-collapsibleHeaderText) {
+  margin: 0.75rem 0;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  color: #787a7f;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-menuItemVertical) {
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-seeAllLink) {
+  font-size: 0;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: #ff3333;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-seeAllLink)::before {
+  content: 'Ver todos';
+  font-size: 0.875rem;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-seeAllLinkContainer) {
+  border: none;
+  margin-bottom: 0.75rem;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-styledLinkContainer) {
+  padding: 0.5rem 0;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-styledLinkText) {
+  font-size: 0.875rem;
+
+  color: #787a7f;
+}
+
+.childrenContainer :global(.vtex-mega-menu-2-x-submenuItemVertical) {
+  border: none;
+
+  background-color: transparent;
+}
+
+.childrenContainer--drawer-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  justify-content: space-between;
+}
+
+.childrenContainer--drawer-menu-mobile
+  :global(.vtex-mega-menu-2-x-menuContainerNavVertical) {
+  position: relative;
+}
+
+.childrenContainer--drawer-menu-mobile
+  :global(.vtex-mega-menu-2-x-menuContainerNavVertical)
+  :global(.vtex-mega-menu-2-x-menuContainerVertical) {
+  max-height: calc(100vh - 10.3125rem);
+
+  margin: 0;
+  padding: 1rem 0;
+
+  overflow-y: auto;
+}
+
+.childrenContainer--drawer-menu-mobile
+  :global(.vtex-mega-menu-2-x-menuContainerNavVertical)
+  :global(.vtex-mega-menu-2-x-submenuContainerVertical) {
+  max-height: calc(100vh - 13.3125rem);
+
+  overflow-y: auto;
+}
+
+.closeIconButton {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  padding: 10px;
+
+  filter: brightness(0) invert(1);
+}
+
+.drawerContent--drawer-menu-mobile {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.drawerHeader :global(.vtex-flex-layout-0-x-flexRow--drawer-header) {
+  width: 100%;
+}
+
+.drawerHeader :global(.vtex-flex-layout-0-x-flexRowContent--drawer-header) {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerHeader :global(.vtex-flex-layout-0-x-flexCol--drawer-close-button) {
+  position: relative;
+}

@@ -1,0 +1,24 @@
+.productHighlightWrapper--collection-promotion,
+.productHighlightWrapper--collection-teaser {
+  max-width: 175px;
+  display: flex;
+}
+
+.productHighlightWrapper--collection-promotion .productHighlightText {
+  height: fit-content;
+  background: #429afe;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.productHighlightWrapper--collection-teaser .productHighlightText {
+  height: fit-content;
+  background: #fe9342;
+  font-size: 0.75rem;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  padding: 5px 10px;
+}

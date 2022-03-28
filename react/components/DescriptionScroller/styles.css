@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.descriptionScroller {
+  display: flex;
+
+  border: none;
+  gap: 1ch;
+  margin: 1rem auto;
+
+  background-color: transparent;
+}
+
+.descriptionScroller:hover {
+  cursor: pointer;
+}
+
+.descriptionScrollerText {
+  margin: 0;
+
+  font-size: 0.875rem;
+
+  color: #ff3333;
+}
+
+.descriptionScrollerIcon {
+  width: 0.5rem;
+
+  transform: rotate(90deg);
+}

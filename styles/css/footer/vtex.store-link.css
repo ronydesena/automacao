@@ -1,0 +1,15 @@
+.link--footer-link {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 1025px) {
+  .link--footer-link {
+    justify-content: flex-start;
+    margin: 0.8rem 0;
+  }
+}

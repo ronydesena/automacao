@@ -1,0 +1,61 @@
+.flexColChild--go-back-button :global(.vtex-mega-menu-2-x-goBackButton) {
+  height: 3rem;
+  width: 100%;
+
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.flexColChild--go-back-button :global(.vtex-mega-menu-2-x-goBackButton):hover {
+  cursor: pointer;
+}
+
+.flexColChild--go-back-button :global(.vtex-mega-menu-2-x-goBackButtonText) {
+  display: none;
+}
+
+.flexColChild--go-back-button :global(.vtex-mega-menu-2-x-caretIcon) {
+  width: 0.6rem;
+
+  filter: invert(46%) sepia(70%) saturate(6817%) hue-rotate(343deg)
+    brightness(103%) contrast(105%);
+}
+
+.flexRowContent--main-header-mobile {
+  padding-bottom: 0;
+
+  background-color: #fff !important;
+
+  box-shadow: none !important;
+}
+
+.flexRowContent--minicartEmptyState .stretchChildrenWidth .flexColChild {
+  padding-bottom: 0;
+}
+
+.flexRowContent--minicartEmptyState
+  .stretchChildrenWidth
+  :global(.vtex-rich-text-0-x-paragraph) {
+  color: #787a7f;
+}
+
+.flexCol--modal-trigger-regions-desktop {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.flexColChild--modal-trigger-regions-desktop {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: fit-content !important;
+}
