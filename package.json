@@ -4,6 +4,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@vtex/prettier-config": "0.1.4",
+    "cypress": "^9.5.2",
     "eslint": "7.12.1",
     "eslint-config-vtex": "12.3.2",
     "eslint-config-vtex-react": "6.3.2",
