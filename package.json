@@ -2,9 +2,14 @@
   "name": "store-theme",
   "private": true,
   "license": "UNLICENSED",
+  "scripts": {
+    "test": "npx cypress open"
+  },
   "devDependencies": {
     "@vtex/prettier-config": "0.1.4",
     "cypress": "^9.5.2",
+    "cypress-wait-for-stable-dom": "^0.0.2",
+    "cypress-wait-until": "^1.7.2",
     "eslint": "7.12.1",
     "eslint-config-vtex": "12.3.2",
     "eslint-config-vtex-react": "6.3.2",

@@ -20,6 +20,13 @@ describe('Home', () => {
       home.header.verifyButtonMyCart()
 
       home.verifyMainBanner()
+
+      home.shelf.verifyTitle()
+      home.shelf.verifyPrice()
+      home.shelf.verifyImage()
+      home.shelf.verifyBuyButton()
+      home.shelf.verifySavingsPercentage()
+      home.shelf.verifySellingPrice()
     })
 
   })
