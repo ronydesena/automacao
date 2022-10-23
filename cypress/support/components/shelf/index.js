@@ -2,33 +2,23 @@ import { el } from './elements'
 
 
 class Shelf {
-  verifyTitle() {
-    cy.get(el.titleShelf)
+  verificarTitulo() {
+    cy.get(el.tituloShelf)
       .should('be.visible')
   }
 
-  verifyPrice() {
-    cy.get(el.priceShelf)
+  verificarPreço() {
+    cy.get(el.precoShelf)
       .should('be.visible')
   }
 
-  verifyImage() {
-    cy.get(el.imageShelf)
+  verificarImagem() {
+    cy.get(el.imagemShelf)
       .should('be.visible')
   }
 
-  verifyBuyButton() {
-    cy.get(el.buyButtonShelf)
-      .should('be.visible')
-  }
-
-  verifySavingsPercentage() {
-    cy.get(el.savingsPercentage)
-      .should('be.visible')
-  }
-
-  verifySellingPrice() {
-    cy.get(el.sellingPrice)
+  verificarBotaoComprar() {
+    cy.get(el.botaoComprar)
       .should('be.visible')
   }
 }

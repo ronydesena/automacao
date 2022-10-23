@@ -6,6 +6,7 @@
     "test": "npx cypress open"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@vtex/prettier-config": "0.1.4",
     "cypress": "^9.5.2",
     "cypress-wait-for-stable-dom": "^0.0.2",
@@ -13,12 +14,16 @@
     "eslint": "7.12.1",
     "eslint-config-vtex": "12.3.2",
     "eslint-config-vtex-react": "6.3.2",
+    "gerador-validador-cpf": "^5.0.2",
     "husky": "4.2.3",
     "lint-staged": "10.1.1",
     "prettier": "2.0.2",
     "typescript": "3.8.3"
   },
   "dependencies": {
-    "react-router-dom": "^5.3.0"
+    "faker-br": "^0.4.1",
+    "global": "^4.4.0",
+    "react-router-dom": "^5.3.0",
+    "yarn": "^1.22.19"
   }
 }

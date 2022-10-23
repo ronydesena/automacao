@@ -1,5 +1,7 @@
 {
   "viewportWidth": 1920,
   "viewportHeight": 1080,
-  "baseUrl": "https://qatheme--codeby.myvtex.com/?__bindingAddress=codeby.myvtex.com"
+  "baseUrl": "https://ronysena--codeby.myvtex.com/?__bindingAddress=codeby.myvtex.com/",
+  "chromeWebSecurity": false,
+  "retries": 1
 }
