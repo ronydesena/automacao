@@ -6,7 +6,7 @@ jobs:
 
   ui-chrome-tests:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node16.17.1-chrome105-ff104-edge
+    container: cypress/browsers:node14.17.6-chrome100-ff98
     strategy:
       fail-fast: false
     steps:
