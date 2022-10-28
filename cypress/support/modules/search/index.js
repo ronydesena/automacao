@@ -72,6 +72,12 @@ class Search {
     cy.get(el.breadcrumbs)
       .should('be.visible')
   }
+
+  scroll(positionY) {
+    cy.waitForStableDOM({ pollInterval: 1000, timeout: 30000 })
+    cy.scrollTo(0, positionY)
+    cy.wait(3000)
+  }
 }
 
 export default new Search
