@@ -199,7 +199,14 @@ class CheckoutPage {
             .should('be.visible')
     }
 
-    inseirCepInvalido() {
+    inserirDestinatarioInput(usuario) {
+        cy.get(el.destinatario)
+            .clear()
+            .type(usuario.nome + " " + usuario.sobrenome)
+            .should('be.visible')
+    }
+
+    inserirCepInvalido() {
 
         const ceps = [
             '1',
@@ -252,6 +259,8 @@ class CheckoutPage {
     }
 
     inserirCartaoValido(usuario) {
+        cy.get(el.pagamentoCredito, { timeout: 10000 })
+            .click()
         validIframe().find(el.inputNumeroCartao, { timeout: 10000 })
             .type(usuario.cartao.numero)
         validIframe().find(el.inputNome, { timeout: 10000 })
@@ -282,22 +291,12 @@ class CheckoutPage {
     validarFormasdePagamento() {
         cy.get(el.pagamentoCredito)
             .should('have.text', 'Cartão de crédito')
-        cy.get(el.pagamentoBoleto)
-            .should('have.text', 'Boleto bancário')
-        cy.get(el.pagamentoPromissory)
-            .should('have.text', 'Promissory')
-        cy.get(el.pagamentoPromissoria)
-            .should('have.text', 'Promissória')
-        cy.get(el.pagamentoDebito)
-            .should('have.text', 'Cartão de débito')
         cy.get(el.pagamentoPix)
             .should('have.text', 'Pix')
-        cy.get(el.PagamentoCustomer)
-            .should('have.text', 'Customer Credit')
     }
 
     inserirCartaoInvalido() {
-        cy.get(el.botaoDebito, { timeout: 10000 })
+        cy.get(el.pagamentoCredito, { timeout: 10000 })
             .click()
 
         const cartoes = [
@@ -315,16 +314,16 @@ class CheckoutPage {
         ]
 
         cartoes.forEach(function (c) {
-            validIframeDebito()
-                .find(el.inputNumeroCartaoDebito, { force: true }, { timeout: 10000 })
+            validIframe()
+                .find(el.inputNumeroCartao, { force: true }, { timeout: 10000 })
                 .clear({ force: true }, { timeout: 10000 })
-            cy.wait(7000)
-            validIframeDebito()
-                .find(el.inputNumeroCartaoDebito, { force: true }, { timeout: 10000 })
+            cy.wait(3000)
+            validIframe()
+                .find(el.inputNumeroCartao, { force: true }, { timeout: 10000 })
                 .type(c)
             cy.get(el.botaoFecharCompra)
                 .click({ force: true })
-            validIframeDebito()
+            validIframe()
                 .find(el.erroCartao, { timeout: 10000 })
                 .should('have.text', 'Não conseguimos confirmar se o número digitado está correto ')
         })

@@ -1,6 +1,7 @@
 import global from '../support/GlobalFunctions'
 import paginaProduto from '../support/modules/páginaProduto'
 import home from '../support/modules/home'
+import search from '../support/modules/search'
 
 describe('Página de Produto', () => {
 
@@ -10,7 +11,8 @@ describe('Página de Produto', () => {
         it('todos os elementos devem carregarar corretamente', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
         })
     })
@@ -18,8 +20,9 @@ describe('Página de Produto', () => {
     context('Quando inserir um cep válido na página de produto', () => {
         it('O sistema deve retornar o valor da entrega', () => {
             home.go()
-           
-            paginaProduto.escolherProduto()
+            
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.inserirCepValido()
         })
@@ -28,8 +31,9 @@ describe('Página de Produto', () => {
     context('Quando inserir um cep inválido com 8 números na página de produto', () => {
         it('O sistema deve retornar que o endereço não foi encontrado', () => {
             home.go()
-           
-            paginaProduto.escolherProduto()
+            
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.inseirirCepInvalido8Digitos()
         })
@@ -39,7 +43,8 @@ describe('Página de Produto', () => {
         it('O sistema não retorna informações', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.inserirCepInvalidoCepMenos8Digitos()
         })
@@ -48,8 +53,9 @@ describe('Página de Produto', () => {
     context('Quando clicar no botão comprar', () => {
         it('O produto deve ser adicionado no carrinho', () => {
             home.go()
-           
-            paginaProduto.escolherProduto()
+            
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
         })

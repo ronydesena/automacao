@@ -11,14 +11,14 @@ class PaginaProduto {
             .should('be.visible')
             .should('have.text', 'Dipirona Sódica 1g 4 Comprimidos ')
 
-        cy.contains(el.preco, '12')
+        cy.contains(el.preco, '5')
             .should('be.visible')
     }
 
     inserirCepValido() {
         cy.get(el.cep)
             .type('59215000')
-        cy.contains(el.delivery, 'Grátis')
+        cy.contains(el.delivery, 'Correios PAC')
             .should('be.visible')
     }
 

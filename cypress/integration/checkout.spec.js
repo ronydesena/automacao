@@ -3,6 +3,7 @@ import paginaProduto from '../support/modules/páginaProduto'
 import global from '../support/GlobalFunctions'
 import carrinho from '../support/modules/carrinho'
 import home from '../support/modules/home'
+import search from '../support/modules/search'
 import signupFactory from '../factories/SignupFactory'
 
 describe('Checkout', () => {
@@ -14,7 +15,8 @@ describe('Checkout', () => {
         it('o produto deve ser removido', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -31,7 +33,8 @@ describe('Checkout', () => {
         it('a quantidade de produto deve ser aumentada no checkout', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -48,7 +51,8 @@ describe('Checkout', () => {
         it('a quantidade deve ser diminuida no checkout', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -67,7 +71,8 @@ describe('Checkout', () => {
         it('o sistema deve apresentar a mensagem de campo obrigatório', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -85,7 +90,8 @@ describe('Checkout', () => {
         it('o sistema informa que existe um erro no documento', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -103,7 +109,8 @@ describe('Checkout', () => {
         it('o sistema informa que existe um erro no número', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -121,7 +128,8 @@ describe('Checkout', () => {
         it('o sistema solcita que o usuário informe um e-mail válido', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -139,7 +147,8 @@ describe('Checkout', () => {
         it('o sistema não deixa prosseguir com a compra', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -166,7 +175,8 @@ describe('Checkout', () => {
         it('o sistema não deixa prosseguir para o pagamento', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -195,71 +205,8 @@ describe('Checkout', () => {
         it('Todas as formas de pagamento devem está disponíveis', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
-            paginaProduto.verificarElementos()
-            paginaProduto.adicionarCarrinho()
+            search.buscarProduto()
             
-            carrinho.go()
-            carrinho.addCheckout()
-
-            checkout.verificarProdutosCheckout()
-            checkout.finalizarCompra()
-
-            const usuario = signupFactory.user()
-
-            checkout.inserirInputEmail(usuario)
-            checkout.inserirInputNome(usuario)
-            checkout.inserirInputSobrenome(usuario)
-            checkout.inserirInputCpf(usuario)
-            checkout.inserirTelefoneInput(usuario)
-            checkout.enviarDadosPessoais()
-            
-            checkout.inserirCepInput(usuario)
-            checkout.entrarNumeroCasaValido(usuario)
-            checkout.inputComplemento(usuario)
-            checkout.irParaPagamento()
-
-            checkout.validarFormasdePagamento()      
-        })
-    })
-
-    context('Ao acessar o checkout', () => {
-        it('deve ser possível realizar compra com cartão de débito', () => {
-            home.go()
-            
-            paginaProduto.escolherProduto()
-            paginaProduto.verificarElementos()
-            paginaProduto.adicionarCarrinho()
-            
-            carrinho.go()
-            carrinho.addCheckout()
-
-            checkout.verificarProdutosCheckout()
-            checkout.finalizarCompra()
-
-            const usuario = signupFactory.user()
-
-            checkout.inserirInputEmail(usuario)
-            checkout.inserirInputNome(usuario)
-            checkout.inserirInputSobrenome(usuario)
-            checkout.inserirInputCpf(usuario)
-            checkout.inserirTelefoneInput(usuario)
-            checkout.enviarDadosPessoais()
-            
-            checkout.inserirCepInput(usuario)
-            checkout.entrarNumeroCasaValido(usuario)
-            checkout.inputComplemento(usuario)
-            checkout.irParaPagamento()
-
-            checkout.realizarPagamentoDebito(usuario) 
-        })
-    })
-
-    context('Ao acessar o checkout digitando numero de cartão de débito inválido', () => {
-        it('o sistema deve bloquear a compra', () => {
-            home.go()
-            
-            paginaProduto.escolherProduto()
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -281,6 +228,41 @@ describe('Checkout', () => {
             checkout.inserirCepInput(usuario)
             checkout.entrarNumeroCasaValido(usuario)
             checkout.inserirInputComplemento(usuario)
+            checkout.inserirDestinatarioInput(usuario)
+            checkout.irParaPagamento()
+
+            checkout.validarFormasdePagamento()      
+        })
+    })
+
+    context('Ao acessar o checkout digitando numero de cartão de credito inválido', () => {
+        it('o sistema deve bloquear a compra', () => {
+            home.go()
+            
+            search.buscarProduto()
+            
+            paginaProduto.verificarElementos()
+            paginaProduto.adicionarCarrinho()
+            
+            carrinho.go()
+            carrinho.addCheckout()
+
+            checkout.verificarProdutosCheckout()
+            checkout.finalizarCompra()
+
+            const usuario = signupFactory.user()
+
+            checkout.inserirInputEmail(usuario)
+            checkout.inserirInputNome(usuario)
+            checkout.inserirInputSobrenome(usuario)
+            checkout.inserirInputCpf(usuario)
+            checkout.inserirTelefoneInput(usuario)
+            checkout.enviarDadosPessoais()
+            
+            checkout.inserirCepInput(usuario)
+            checkout.entrarNumeroCasaValido(usuario)
+            checkout.inserirInputComplemento(usuario)
+            checkout.inserirDestinatarioInput(usuario)
             checkout.irParaPagamento()
 
             checkout.inserirCartaoInvalido()
@@ -291,7 +273,8 @@ describe('Checkout', () => {
         it('O usuário deverá ser capaz de realizar uma compra com cartão de crédito', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -313,6 +296,7 @@ describe('Checkout', () => {
             checkout.inserirCepInput(usuario)
             checkout.entrarNumeroCasaValido(usuario)
             checkout.inserirInputComplemento(usuario)
+            checkout.inserirDestinatarioInput(usuario)
             checkout.irParaPagamento()
 
             checkout.inserirCartaoValido(usuario)

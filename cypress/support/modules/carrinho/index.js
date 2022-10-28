@@ -10,13 +10,13 @@ class Carrinho {
     aumentarQuantidade() {
         cy.get(el.selecaoQuantidade)
             .select('3')
-        cy.contains(el.preco, 'R$ 36,00')
+        cy.contains(el.preco, 'R$ 16,92')
     }
 
     diminuirQuantidade(){
         cy.get(el.selecaoQuantidade)
             .select('2')
-        cy.contains(el.preco, 'R$ 24,00')
+        cy.contains(el.preco, 'R$ 11,28')
     }
 
     checarRemocao() {

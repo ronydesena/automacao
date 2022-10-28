@@ -13,12 +13,12 @@ class HomePage {
 
   go() {
     cy.clearCookies()
-    cy.setCookie(ck.chave, ck.valor)
+    //cy.setCookie(ck.chave, ck.valor)
     cy.lgpdy()
     cy.setSessionStorage()
 
     cy.visit('/')
-    cy.title().should('eq', 'Codeby')
+    cy.title().should('eq', 'promofarma')
   }
 
   verifyMainBanner() {

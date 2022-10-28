@@ -43,13 +43,10 @@ class Localizacao extends Header {
   inserirCepInvalido() {
 
     const ceps = [
-      '5921',
-      '55076',
-      '5231547',
-      '33333333'
+      '52315471',
+      '333333331'
     ]
-    cy.get(el.botaoLocalizacao)
-      .click({ force: true })
+    cy.get(el.botaoLocalizacao).click({ force: true })
     ceps.forEach(function (c) {
       cy.get(el.inputModal)
         .clear()

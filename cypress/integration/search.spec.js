@@ -1,5 +1,4 @@
 import global from '../support/GlobalFunctions'
-import header from '../support/components/header'
 import home from '../support/modules/home'
 import search from '../support/modules/search'
 
@@ -34,12 +33,39 @@ describe('Search', () => {
     })
 
      
-    context('Quando acessar a search page e selecionar o filtro de categoria', () => {
+    context('Quando acessar a search page e selecionar o filtro de Categoria', () => {
         it('o sistema deve retornar uma search page com o produtos específicos', () => {
             home.go()
            
-            search.buscaProdutoValido()
+            search.buscarProdutoValido()
             search.filtrarCategoria()
+        })
+    })
+
+    context('Quando acessar a search page e selecionar o filtro de Forma', () => {
+        it('o sistema deve retornar uma search page com o produtos específicos', () => {
+            home.go()
+           
+            search.buscarProdutoValido()
+            search.filtrarForma()
+        })
+    })
+
+    context('Quando acessar a search page e selecionar o filtro de Marca', () => {
+        it('o sistema deve retornar uma search page com o produtos específicos', () => {
+            home.go()
+           
+            search.buscarProdutoValido()
+            search.filtrarMarca()
+        })
+    })
+
+    context('Quando acessar a search page e selecionar o filtro de Subcategoria', () => {
+        it('o sistema deve retornar uma search page com o produtos específicos', () => {
+            home.go()
+           
+            search.buscarProdutoValido()
+            search.filtrarSubcategoria()
         })
     })
 })

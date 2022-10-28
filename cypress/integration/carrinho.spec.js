@@ -2,6 +2,7 @@ import global from '../support/GlobalFunctions'
 import paginaProduto from '../support/modules/páginaProduto'
 import carrinho from '../support/modules/carrinho'
 import home from '../support/modules/home'
+import search from '../support/modules/search'
 
 describe('Carrinho', () => {
 
@@ -11,7 +12,8 @@ describe('Carrinho', () => {
         it('o valor deve ser alterado', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -24,7 +26,8 @@ describe('Carrinho', () => {
         it('o valor deve ser alterado', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -37,8 +40,9 @@ describe('Carrinho', () => {
     context('Quando acessar o carrinho e clicar remover produtos', () => {
         it('o produto deve ser retirado do carrinho', () => {
             home.go()
+            
+            search.buscarProduto()
 
-            paginaProduto.escolherProduto()
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             
@@ -51,7 +55,8 @@ describe('Carrinho', () => {
         it('o produto deve ser levado ao checkout', () => {
             home.go()
             
-            paginaProduto.escolherProduto()
+            search.buscarProduto()
+            
             paginaProduto.verificarElementos()
             paginaProduto.adicionarCarrinho()
             

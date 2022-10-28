@@ -28,6 +28,7 @@ exports.el = {
     numeroCasa: '#ship-number',
     complemento: '#ship-complement',
     botaoEntrega: '#btn-go-to-payment',
+    destinatario: '#ship-receiverName',
 
     iframeCartao: '#iframe-placeholder-creditCardPaymentGroup > .span12',
     iframeDebito: '#iframe-placeholder-debitCardPaymentGroup > .span12',
