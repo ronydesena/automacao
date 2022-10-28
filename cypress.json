@@ -1,6 +1,8 @@
 {
+
   "viewportWidth": 1920,
   "viewportHeight": 1080,
+<<<<<<< HEAD
   "baseUrl": "https://www.promofarma.com.br/",
   "chromeWebSecurity": false,
   "retries": 1,
@@ -8,4 +10,13 @@
   "defaultCommandTimeout": 20000,
   "responseTimeout": 420000,
   "pageLoadTimeout": 180000
+=======
+  "baseUrl": "https://ronysena--codeby.myvtex.com",
+  "defaultCommandTimeout": 20000,
+  "responseTimeout": 420000,
+  "pageLoadTimeout": 180000,
+  "chromeWebSecurity": false,
+  "retries": 1,
+  "projectId": "eeh3ij"
+>>>>>>> 16f3577a8d7c6d5ee0bc5f73083e7abc72266489
 }
