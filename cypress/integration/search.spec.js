@@ -51,7 +51,7 @@ describe('Search', () => {
         })
     })
 
-    context.only('Quando acessar a search page e selecionar o filtro de Marca', () => {
+    context('Quando acessar a search page e selecionar o filtro de Marca', () => {
         it('o sistema deve retornar uma search page com o produtos específicos', () => {
             home.go()
            
@@ -61,7 +61,7 @@ describe('Search', () => {
         })
     })
 
-    context.only('Quando acessar a search page e selecionar o filtro de Subcategoria', () => {
+    context('Quando acessar a search page e selecionar o filtro de Subcategoria', () => {
         it('o sistema deve retornar uma search page com o produtos específicos', () => {
             home.go()
            
