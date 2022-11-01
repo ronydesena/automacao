@@ -1,5 +1,4 @@
 import global from '../support/GlobalFunctions'
-import search from '../support/modules/search'
 import home from '../support/modules/home'
 
 
@@ -28,7 +27,7 @@ describe('Home', () => {
     })
   })
 
-  context.only('Quando acessar a funcionalidade de Localização', () => {
+  context('Quando acessar a funcionalidade de Localização', () => {
     it('o sistema deve verificar em Localização se não aceita cep Inválido', () => {
       home.go()
       home.scroll(5000)

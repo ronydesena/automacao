@@ -31,8 +31,6 @@ exports.el = {
     destinatario: '#ship-receiverName',
 
     iframeCartao: '#iframe-placeholder-creditCardPaymentGroup > .span12',
-    iframeDebito: '#iframe-placeholder-debitCardPaymentGroup > .span12',
-    botaoDebito: '#payment-group-debitCardPaymentGroup',
     botaoFecharCompra: '[data-bind="fadeVisible: !window.router.sac.isActive() && window.paymentData.isPaymentButtonVisible(), click: submit, disable: window.checkout.disablePaymentButton"]',
     erroCartao: '.title-description .description',
 
@@ -42,17 +40,6 @@ exports.el = {
     selectAnoValidade: '.iframe-credit-card-payment-group select#creditCardpayment-card-0Year',
     codigoSegurança: '.iframe-credit-card-payment-group input#creditCardpayment-card-0Code',
     
-    inputNumeroCartaoDebito: '.iframe-debit-card-payment-group input#creditCardpayment-card-0Number.input-medium',
-    inputNomeDebito: '.iframe-debit-card-payment-group input#creditCardpayment-card-0Name.input-medium',
-    selectMesValidadeDebito: '.iframe-debit-card-payment-group select#creditCardpayment-card-0Month',
-    selectAnoValidadeDebito: '.iframe-debit-card-payment-group select#creditCardpayment-card-0Year',
-    codigoSegurançaDebito: '.iframe-debit-card-payment-group input#creditCardpayment-card-0Code',
-
     pagamentoCredito: '#payment-group-creditCardPaymentGroup > .payment-group-item-text',
-    pagamentoBoleto: '#payment-group-bankInvoicePaymentGroup > .payment-group-item-text',
-    pagamentoPromissory: '#payment-group-custom201PaymentGroupPaymentGroup > .payment-group-item-text',
-    pagamentoPromissoria: '#payment-group-promissoryPaymentGroup > .payment-group-item-text',
-    pagamentoDebito: '#payment-group-debitCardPaymentGroup > .payment-group-item-text' ,
-    pagamentoPix: '#payment-group-instantPaymentPaymentGroup > .payment-group-item-text',
-    PagamentoCustomer: '#payment-group-creditControlPaymentGroup > .payment-group-item-text'
+    pagamentoPix: '#payment-group-instantPaymentPaymentGroup > .payment-group-item-text'
 }

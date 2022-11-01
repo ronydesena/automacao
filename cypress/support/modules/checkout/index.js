@@ -7,13 +7,6 @@ const validIframe = function () {
         .then(cy.wrap)
 }
 
-const validIframeDebito = function () {
-    return cy
-        .get(el.iframeDebito, { timeout: 10000 })
-        .its('0.contentDocument.body').should('not.be.empty', { timeout: 10000 })
-        .then(cy.wrap)
-}
-
 class CheckoutPage {
 
     verificarProdutosCheckout() {
@@ -270,21 +263,6 @@ class CheckoutPage {
         validIframe().find(el.selectAnoValidade, { timeout: 10000 })
             .select(usuario.cartao.anoCartao)
         validIframe().find(el.codigoSegurança, { timeout: 10000 })
-            .type(usuario.cartao.codigoSeguranca)
-    }
-
-    realizarPagamentoDebito(usuario) {
-        cy.get(el.botaoDebito, { timeout: 10000 })
-            .click()
-        validIframeDebito().find(el.inputNumeroCartaoDebito, { timeout: 10000 })
-            .type(usuario.cartao.numero)
-        validIframeDebito().find(el.inputNomeDebito, { timeout: 10000 })
-            .type(usuario.nome + " " + usuario.sobrenome)
-        validIframeDebito().find(el.selectMesValidadeDebito, { timeout: 10000 })
-            .select(usuario.cartao.mesCartao)
-        validIframeDebito().find(el.selectAnoValidadeDebito, { timeout: 10000 })
-            .select(usuario.cartao.anoCartao)
-        validIframeDebito().find(el.codigoSegurançaDebito, { timeout: 10000 })
             .type(usuario.cartao.codigoSeguranca)
     }
 
