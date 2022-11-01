@@ -6,7 +6,7 @@ jobs:
 
   firefox:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.6-chrome100-ff98
+    container: cypress/browsers:node12.16.1-chrome80-ff73
     strategy:
       fail-fast: false
     steps:
