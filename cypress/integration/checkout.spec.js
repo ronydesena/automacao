@@ -269,7 +269,7 @@ describe('Checkout', () => {
         })
     })
 
-    context.only('Ao acessar o checkout', () => {
+    context('Ao acessar o checkout', () => {
         it('O usuário deverá ser capaz de realizar uma compra com cartão de crédito', () => {
             home.go()
             
