@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: 'UI Tests - Chrome'
+      - name: 'UI Tests - Firefox'
         uses: cypress-io/github-action@v2
         with:
           install-command: yarn install
@@ -21,7 +21,7 @@ jobs:
           wait-on-timeout: 120
           browser: firefox
           record: true
-          group: 'UI - Chrome'
+          group: 'UI - Firefox'
           spec: cypress/integration/*
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
