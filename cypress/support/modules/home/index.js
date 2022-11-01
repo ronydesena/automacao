@@ -1,5 +1,4 @@
 import { el } from './elements'
-import { ck } from '../cookie/elements'
 import header from '../../components/header/'
 import shelf from '../../components/shelf'
 
@@ -13,7 +12,6 @@ class HomePage {
 
   go() {
     cy.clearCookies()
-    //cy.setCookie(ck.chave, ck.valor)
     cy.lgpdy()
     cy.setSessionStorage()
 

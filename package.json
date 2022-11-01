@@ -21,6 +21,7 @@
     "typescript": "3.8.3"
   },
   "dependencies": {
+    "cypress-real-events": "^1.7.2",
     "faker-br": "^0.4.1",
     "global": "^4.4.0",
     "react-router-dom": "^5.3.0",

@@ -1,7 +1,9 @@
 import { el } from './elements'
+import "cypress-real-events/support";
+
 
 class Header {
-  
+
   verificarImagemLogo() {
     cy.get(el.imagemLogo)
       .should('be.visible')
@@ -46,7 +48,8 @@ class Localizacao extends Header {
       '52315471',
       '333333331'
     ]
-    cy.get(el.botaoLocalizacao).click({ force: true })
+
+    cy.contains(el.botaoLocalizacao, 'Localização').click({ force: true })
     ceps.forEach(function (c) {
       cy.get(el.inputModal)
         .clear()
@@ -57,8 +60,8 @@ class Localizacao extends Header {
   }
 
   voltarModal() {
-    cy.get(el.botaoLocalizacao)
-      .click({ force: true })
+    cy.contains(el.botaoLocalizacao, 'Localização').click({ force: true })
+    cy.get(el.tituloLocalizacao).should('have.text', 'Onde você está ?', { timeout: 30000 })
     cy.get(el.inputModal)
       .type('59076400', { force: true })
     cy.get(el.nomeRegiao).should('have.text', 'Avenida Capitão-Mor Gouveia - Natal - RN')
@@ -68,8 +71,8 @@ class Localizacao extends Header {
   }
 
   inserircepValido() {
-    cy.get(el.botaoLocalizacao)
-      .click({ force: true })
+    cy.contains(el.botaoLocalizacao, 'Localização').click({ force: true })
+    cy.get(el.tituloLocalizacao).should('have.text', 'Onde você está ?', { timeout: 30000 })
     cy.get(el.inputModal)
       .type('59076400', { force: true })
     cy.get(el.nomeRegiao).should('have.text', 'Avenida Capitão-Mor Gouveia - Natal - RN')

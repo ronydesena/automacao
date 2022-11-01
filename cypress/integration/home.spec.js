@@ -1,4 +1,5 @@
 import global from '../support/GlobalFunctions'
+import search from '../support/modules/search'
 import home from '../support/modules/home'
 
 
@@ -27,21 +28,24 @@ describe('Home', () => {
     })
   })
 
-  context('Quando acessar a funcionalidade de Localização', () => {
+  context.only('Quando acessar a funcionalidade de Localização', () => {
     it('o sistema deve verificar em Localização se não aceita cep Inválido', () => {
       home.go()
+      home.scroll(5000)
       home.header.inserirCepInvalido()
     })
 
 
     it('o sistema deve verificar em Localização se aceita cep válido', () => {
       home.go()
+      home.scroll(5000)
       home.header.inserircepValido()
     })
 
 
     it('o sistema deve verificar se ele volta para o modal inicial ao clicar em "Esta não é Minha Localização', () => {
       home.go()
+      home.scroll(5000)
       home.header.voltarModal()
     })
   })
